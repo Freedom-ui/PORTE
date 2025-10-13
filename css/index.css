@@ -5,3 +5,143 @@
     margin: 0 auto;
     padding: 56px 0 0 0;
   }
+  
+  /* Hero Carousel */
+  .hero-carousel {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Slides */
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    pointer-events: none;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .carousel-slide.active {
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+  
+  .carousel-slide.prev {
+    transform: translateX(-100%);
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Flechas de navegación */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .carousel-arrow:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .carousel-arrow svg {
+    color: var(--color-primary);
+  }
+  
+  .carousel-arrow-left {
+    left: 30px;
+  }
+  
+  .carousel-arrow-right {
+    right: 30px;
+  }
+  
+  /* Indicadores */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px 16px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+  
+  .indicator:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+  }
+  
+  .indicator.active {
+    background-color: white;
+    transform: scale(1.15);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1440px) {
+    .main-content {
+      padding: 56px 30px 0 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-container {
+      height: 400px;
+    }
+    
+    .carousel-arrow {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .carousel-arrow-left {
+      left: 15px;
+    }
+    
+    .carousel-arrow-right {
+      right: 15px;
+    }
+  }
