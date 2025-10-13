@@ -1,0 +1,164 @@
+/* Importar fuentes Inria Sans */
+@font-face {
+    font-family: 'InriaSans-Regular';
+    src: url('../assets/fonts/Inria-Sans/InriaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'InriaSans-Bold';
+    src: url('../assets/fonts/Inria-Sans/InriaSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'InriaSans-Light';
+    src: url('../assets/fonts/Inria-Sans/InriaSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'InriaSans-Italic';
+    src: url('../assets/fonts/Inria-Sans/InriaSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'InriaSans-BoldItalic';
+    src: url('../assets/fonts/Inria-Sans/InriaSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'InriaSans-LightItalic';
+    src: url('../assets/fonts/Inria-Sans/InriaSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+/* Importar fuentes Instrument Sans */
+@font-face {
+  font-family: 'InstrumentSans-Regular';
+  src: url('../assets/fonts/Instrument-Sans/InstrumentSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'InstrumentSans-Bold';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'InstrumentSans-Italic';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'InstrumentSans-BoldItalic';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'InstrumentSans-LightItalic';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'InstrumentSans-Light';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'InstrumentSans-Medium';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'InstrumentSans-MediumItalic';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'InstrumentSans-SemiBold';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'InstrumentSans-SemiBoldItalic';
+    src: url('../assets/fonts/Instrument-Sans/InstrumentSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  /* Variables CSS */
+  :root {
+    /* Colores */
+    --color-primary: #0A182A;
+    --color-secondary: #FFFFFF;
+    --color-hover: rgba(255, 255, 255, 0.8);
+    
+    /* Tipografía */
+    --font-primary: 'InriaSans-Light', sans-serif;
+    --font-size-nav: 24px;
+    
+    /* Espaciados */
+    --spacing-links: 27px;
+    --spacing-navbar-vertical: 37px;
+    
+    /* Bordes */
+    --border-radius: 10px;
+  }
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    line-height: 1.6;
+    padding-top: 106px; /* Compensar la altura del navbar fijo */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Ajustar padding-top para móviles */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px; /* Altura reducida del navbar en móvil */
+    }
+  }
