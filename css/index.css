@@ -148,7 +148,7 @@
 
   /* ==================================================== SECCIÓN: NUESTROS PRODUCTOS ==================================================== */
 .productos-section {
-  padding: 80px 0 100px;
+  padding: 80px 0 10px;
   background: #fff;
 }
 .productos-section .container {
@@ -291,4 +291,132 @@
   .producto-badges { left: 6%; top: 26%; flex-direction: row; gap: 12px; transform: translateY(-20px); }
   .badge { width: 56px; height: 56px; }
   .producto-title { max-width: 520px; font-size: 22px; }
+}
+
+/* ==================================================== SECCIÓN: PORTE TIPS ==================================================== */
+.tips-section {
+  padding: 60px 0 120px; /* reduced top padding by 10px to bring sections closer */
+  background: #fff;
+}
+.tips-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.tips-header h2 {
+  font-size: 56px;
+  color: #0A182A;
+  margin: 0 0 8px;
+  font-family: 'InriaSans-Bold', 'InriaSans-Regular', sans-serif;
+}
+.tips-header p {
+  color: #667;
+  margin: 0 0 18px;
+  font-size: 18px;
+  font-family: 'InstrumentSans-Regular', 'InstrumentSans-Light', sans-serif;
+}
+.tips-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.15fr; /* derecha un poco más ancha para títulos en 2 líneas */
+  gap: 28px;
+  align-items: start;
+}
+.tip-feature {
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(10,24,42,0.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.tip-feature:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 22px 44px rgba(10,24,42,0.12);
+}
+.tip-feature-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+.tip-feature-body {
+  padding: 22px 26px 22px 26px;
+  padding-right: 110px; /* espacio para el botón circular */
+}
+.tip-feature-title {
+  font-size: 22px;
+  margin: 0 0 8px;
+  color: #081226;
+  font-family: 'InriaSans-Bold', 'InriaSans-Regular', sans-serif;
+}
+.tip-feature-excerpt {
+  font-size: 15px;
+  color: #667;
+  font-family: 'InstrumentSans-Regular', 'InstrumentSans-Light', sans-serif;
+}
+.tip-action {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #0A182A;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 6px 14px rgba(10,24,42,0.12);
+}
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* increased gap between the three right-side tip cards */
+}
+.tip-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 12px 28px rgba(10,24,42,0.07);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(10,24,42,0.12);
+}
+.tip-thumb {
+  width: 140px; /* más espacio para el título */
+  height: 88px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.tip-card-body .tip-card-title {
+  font-size: 16px;
+  margin: 0 0 6px;
+  color: #081226;
+  font-family: 'InriaSans-Bold', 'InriaSans-Regular', sans-serif;
+  line-height: 1.18;
+}
+
+.tip-card-body { flex: 1; } /* usar todo el espacio restante para el texto */
+.tip-card-body .tip-card-excerpt {
+  font-size: 13px;
+  color: #667;
+  font-family: 'InstrumentSans-Regular', 'InstrumentSans-Light', sans-serif;
+}
+.tips-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .tips-grid { grid-template-columns: 1fr; }
+  .tip-feature-img { height: 240px; }
+  .tip-thumb { width: 110px; height: 74px; }
+  .tip-action { right: 14px; bottom: 14px; width: 48px; height: 48px; font-size: 18px; }
 }
