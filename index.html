@@ -15,18 +15,203 @@
   <!-- Navbar placeholder - aquí se cargará el navbar -->
   <div id="navbar-placeholder"></div>
 
-  <!-- Contenido principal de la página index -->
+  <!-- Contenido principal de la página inicio -->
   <main class="main-content">
-    <div style="padding: 50px 20px; background-color: #f5f5f5; min-height: 80vh;">
-      <h2>Contenido de Prueba</h2>
-      <p>Este es contenido de relleno para poder visualizar correctamente el navbar y el footer.</p>
-      <h3>Sección 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <h3>Sección 2</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h3>Sección 3</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
+    <!-- ============================================ -->
+    <!-- SECCIÓN: HERO CAROUSEL -->
+    <!-- ============================================ -->
+    <section class="hero-carousel">
+      <div class="carousel-container">
+        <!-- Slides -->
+        <div class="carousel-slides">
+          <a href="html/detalle-productos/productos-performance-adultos.html" class="carousel-slide active">
+            <img src="assets/images/general/carousel/porte-banner-performance-adulto.png" alt="Porte Performance Perros Adultos">
+          </a>
+          <a href="/html/detalle-productos/productos-spe-adultos.html" class="carousel-slide">
+            <img src="assets/images/general/carousel/porte-banner-spe-adulto.png" alt="Porte Super Premium Excellence Perros Adultos">
+          </a>
+          <a href="/html/detalle-productos/productos-spe-cachorros.html" class="carousel-slide">
+            <img src="assets/images/general/carousel/porte-banner-spe-cachorro.png" alt="Porte Super Premium Excellence Perros Cachorros">
+          </a>
+        </div>
+
+        <!-- Flechas de navegación -->
+        <button class="carousel-arrow carousel-arrow-left" aria-label="Anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="carousel-arrow carousel-arrow-right" aria-label="Siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button class="indicator active" aria-label="Ir a slide 1"></button>
+          <button class="indicator" aria-label="Ir a slide 2"></button>
+          <button class="indicator" aria-label="Ir a slide 3"></button>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- SECCIÓN: NUESTROS PRODUCTOS  -->
+    <!-- ============================================ -->
+    <section class="productos-section">
+      <div class="container">
+        <header class="productos-header">
+          <h2>Nuestros productos</h2>
+          <p>Explora una variedad de alimentos de la mejor calidad</p>
+        </header>
+
+        <div class="productos-grid">
+          <article class="producto-card">
+            <div class="producto-media">
+              <div class="producto-badges">
+                <img src="assets/images/general/etiquetas/digestion-azul.png" alt="" class="badge">
+                <img src="assets/images/general/etiquetas/nutricion-azul.png" alt="" class="badge">
+                <img src="assets/images/general/etiquetas/ingredientes-azul.png" alt="" class="badge">
+              </div>
+              <img src="assets/images/general/bolsones/bolson-spe-adulto.png" alt="PORTE Super Premium - Perros Adultos" class="producto-img">
+            </div>
+            <h3 class="producto-title">Super Premium Excellence</h3>
+            <p class="producto-subtitle">Perros Adultos</p>
+            <a class="btn btn-blue" href="/html/detalle-productos/productos-spe-adultos.html">Ver producto</a>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-media">
+              <div class="producto-badges">
+                <img src="assets/images/general/etiquetas/digestion-celeste.png" alt="" class="badge">
+                <img src="assets/images/general/etiquetas/nutricion-celeste.png" alt="" class="badge">
+                <img src="assets/images/general/etiquetas/ingredientes-celeste.png" alt="" class="badge">
+              </div>
+              <img src="assets/images/general/bolsones/bolson-spe-cachorro.png" alt="PORTE Super Premium - Perros Cachorros" class="producto-img">
+            </div>
+            <h3 class="producto-title">Super Premium Excellence</h3>
+            <p class="producto-subtitle">Perros Cachorros</p>
+            <a class="btn btn-celeste" href="/html/detalle-productos/productos-spe-cachorros.html">Ver producto</a>
+          </article>
+
+          <article class="producto-card">
+            <div class="producto-media">
+              <div class="producto-badges">
+                <img src="assets/images/general/etiquetas/digestion-verde.png" alt="" class="badge">
+                <img src="assets/images/general/etiquetas/nutricion-verde.png" alt="" class="badge">
+                <img src="assets/images/general/etiquetas/ingredientes-verde.png" alt="" class="badge">
+              </div>
+              <img src="assets/images/general/bolsones/bolson-performance-adulto.png" alt="PORTE Performance - Perros Adultos" class="producto-img">
+            </div>
+            <h3 class="producto-title">Performance</h3>
+            <p class="producto-subtitle">Perros Adultos</p>
+            <a class="btn btn-green" href="/html/detalle-productos/productos-performance-adultos.html">Ver producto</a>
+          </article>
+        </div>
+
+        <div class="productos-cta">
+          <a class="btn btn-cta" href="/productos.html">Ver todos ↗</a>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- SECCIÓN: PORTE TIPS -->
+    <!-- ============================================ -->
+    <section class="tips-section">
+      <div class="container">
+        <header class="tips-header">
+          <h2>Porte Tips</h2>
+          <p>Descubrí todo acerca del cuidado y la atención que ellos merecen</p>
+        </header>
+
+        <div class="tips-grid">
+          <!-- Feature tip -->
+          <a class="tip-feature" href="html/tips-individuales/porte-tips-comportamiento-01.html">
+            <img src="assets/images/tips/lenguaje-corporal.png" alt="Aprende a leer su lenguaje corporal" class="tip-feature-img">
+            <div class="tip-feature-body">
+              <h3 class="tip-feature-title">Aprende a leer su lenguaje corporal en unos minutos</h3>
+              <p class="tip-feature-excerpt">Desde mover la cola, hasta olfatearte de pies a cabeza, con esta simple guía aprenderás a entender que es lo que te quieren decir con sus gestos</p>
+            </div>
+            <span class="tip-action" aria-hidden="true">→</span>
+          </a>
+
+          <!-- Small tips list -->
+          <div class="tips-list">
+            <a class="tip-card" href="/html/tips-individuales/porte-tips-alimentacion-01.html">
+              <img src="assets/images/tips/actividad-interiores.png" alt="Cómo mantener a tu mascota activa" class="tip-thumb">
+              <div class="tip-card-body">
+                <h4 class="tip-card-title">Cómo mantener a tu mascota activa en interiores</h4>
+                <p class="tip-card-excerpt">Juegos y actividades para hacer que tu mascota se mueva sin salir de casa</p>
+              </div>
+            </a>
+
+            <a class="tip-card" href="/html/tips-individuales/porte-tips-salud-01.html">
+              <img src="assets/images/tips/guia-entrenar-cachorro.png" alt="Guía para entrenar a tu cachorro" class="tip-thumb">
+              <div class="tip-card-body">
+                <h4 class="tip-card-title">Guía definitiva para entrenar a tu cachorro</h4>
+                <p class="tip-card-excerpt">Paso a paso de como acompañar su crecimiento con técnicas sencillas</p>
+              </div>
+            </a>
+
+            <a class="tip-card" href="/html/tips-individuales/porte-tips-higiene-01.html">
+              <img src="assets/images/tips/tips-pelaje.png" alt="Tips para un pelaje suave" class="tip-thumb">
+              <div class="tip-card-body">
+                <h4 class="tip-card-title">Tips para un pelaje suave, sano y brilloso</h4>
+                <p class="tip-card-excerpt">Aprendé en esta guía pequeños tips para mantener su piel y pelo saludable</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="tips-cta">
+          <a class="btn btn-cta" href="/porte-tips.html">Ver todos ↗</a>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- SECCIÓN: FAMILIA PORTE -->
+    <!-- ============================================ -->
+    <section class="familia-porte-section">
+      <div class="familia-porte-header">
+        <h2 class="familia-porte-title">Familia Porte</h2>
+        <p class="familia-porte-subtitle">Conocé más acerca de nosotros y como te brindamos el mejor producto posible</p>
+      </div>
+
+      <div class="familia-porte-container">
+        <div class="familia-porte-contenido">
+          <p class="familia-porte-texto">
+            La rigurosidad en la selección de las materias primas, los controles minuciosos a lo largo de todo el proceso, junto a la tecnología de punta, aseguran productos de altísima calidad certificada, atributo fundamental para una gama de productos comercializados exclusivamente en canal veterinario.
+          </p>
+          <a href="familia-porte.html" class="btn-cta">Ver más ↗</a>
+        </div>
+
+        <div class="familia-porte-imagen-container">
+          <img src="assets/images/general/familia-porte/familia-porte-01.png" alt="Familia Porte - Fabricación" class="familia-porte-imagen">
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- SECCIÓN: NEWSLETTER -->
+    <!-- ============================================ -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-content">   
+          <form id="newsletterForm" class="newsletter-form" onsubmit="return false;">
+            <div class="form-group">
+              <input 
+                type="email" 
+                id="newsletterEmail" 
+                class="newsletter-input" 
+                placeholder="Ingresá tu e-mail"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              >
+              <button type="submit" class="newsletter-button">Suscribirme</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer placeholder - aquí se cargará el footer -->
@@ -34,5 +219,6 @@
 
   <!-- JavaScript -->
   <script src="js/components-loader.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
