@@ -1,0 +1,138 @@
+.productos-section {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contenedor-productos {
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ======== TÍTULO ======== */
+.titulo-productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.titulo-productos h2 {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 70px;
+  color: #0a182a;
+  margin: 0;
+}
+
+.titulo-productos .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+  max-width: 530px;
+}
+
+/* ======== CARD ======== */
+.producto01-card {
+  width: 1440px;
+  height: 500px;
+  margin-bottom: 40px;
+  background-image: url("/assets/images/productos/spe-adultos.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.producto02-card {
+  width: 1440px;
+  height: 500px;
+  margin-bottom: 40px;
+  background-image: url("/assets/images/productos/spe-cachorros.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.producto03-card {
+  width: 1440px;
+  height: 500px;
+  margin-bottom: 56px;
+  background-image: url("/assets/images/productos/performance-adultos.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ======== BOTÓN ======== */
+.btn-ver-producto-mod01 {
+  position: absolute;
+  left: 115px;
+  bottom: 90px;
+  background-color: #0a182a;
+  color: #fff;
+  font-family: 'InriaSans-Regular', sans-serif;
+  font-size: 24px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-ver-producto-mod02 {
+  position: absolute;
+  right: 330px;
+  bottom: 80px;
+  background-color: #61849A;
+  color: #fff;
+  font-family: 'InriaSans-Regular', sans-serif;
+  font-size: 24px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-ver-producto-mod03 {
+  position: absolute;
+  left: 115px;
+  bottom:85px;
+  background-color: #3D3E30;
+  color: #fff;
+  font-family: 'InriaSans-Regular', sans-serif;
+  font-size: 24px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-ver-producto-mod01:hover,
+.btn-ver-producto-mod02:hover,
+.btn-ver-producto-mod03:hover {
+  transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE MÍNIMO ======== */
+@media (max-width: 1500px) {
+  .producto-card {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 1440 / 500;
+  }
+
+  .titulo-productos h2 {
+    font-size: 64px;
+  }
+}
