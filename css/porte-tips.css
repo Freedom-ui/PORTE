@@ -1,0 +1,203 @@
+/* ============================================ */
+/* PORTE TIPS - PÁGINA PRINCIPAL */
+/* ============================================ */
+
+.main-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ============================================ */
+/* TÍTULO PRINCIPAL CON LÍNEAS */
+/* ============================================ */
+
+.titulo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.titulo-principal h1 {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 70px;
+  color: #0a182a;
+  margin: 0;
+}
+
+.titulo-principal .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+  max-width: 530px;
+}
+
+/* ============================================ */
+/* SECCIÓN DE CATEGORÍA (Alimentación, Salud, etc.) */
+/* ============================================ */
+
+.tips-categoria-section {
+  margin-bottom: 56px;
+}
+
+/* Header de cada categoría */
+.tips-categoria-header {
+  margin-bottom: 40px;
+}
+
+.tips-categoria-title {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 56px;
+  color: #0A182A;
+  margin: 0 0 8px;
+  line-height: 1;
+}
+
+.tips-categoria-subtitle {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* Grid de cards */
+.tips-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 460px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Card individual */
+.tip-card {
+  width: 460px;
+  height: 505px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.tip-card-imagen {
+  width: 413px; /* 460 - 24*2 = 412, ajusto a 413 */
+  height: 345px;
+  object-fit: cover;
+  margin: 37px 24px 0 24px; /* Top: 37px, Lados: 24px */
+  border-radius: 8px; /* Mejora: esquinas suaves */
+}
+
+.tip-card-contenido {
+  padding: 0 24px 24px 24px; /* Espaciado lateral: 24px */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-card-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 26px;
+  color: #0A182A;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.tip-card-texto {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 16px;
+  color: #0A182A;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ============================================ */
+/* BOTÓN "VER TODOS" CON LÍNEAS */
+/* ============================================ */
+
+.tips-categoria-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.tips-categoria-cta .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+  max-width: 530px;
+}
+
+.btn-cta {
+  background: #0A182A;
+  color: white;
+  padding: 14px 36px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 500;
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================ */
+/* RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 1440px) {
+  .tips-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 460px));
+  }
+}
+
+@media (max-width: 1024px) {
+  .tips-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+
+  .tip-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .tip-card-imagen {
+    width: calc(100% - 48px);
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-principal h1 {
+    font-size: 48px;
+  }
+
+  .tips-categoria-title {
+    font-size: 42px;
+  }
+
+  .tips-cards-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
