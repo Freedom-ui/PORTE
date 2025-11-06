@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +12,87 @@
 	<link rel="stylesheet" href="../../css/detalle-producto.css">
 	<link rel="icon" href="../../assets/icons/porte-favicon.png" type="image/png">
 </head>
+
 <body>
 	<div id="navbar-placeholder"></div>
 
 	<main class="main-content">
-		<div style="padding: 50px 20px; background-color: #f5f5f5; min-height: 80vh;">
-			<h2>Productos - Super - Premium - Excellence - Adultos — Contenido de Prueba</h2>
-			<p>Bloque de contenido de relleno para visualizar el navbar y el footer en esta sección.</p>
-			<h3>Sección 1</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 2</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 3</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-		</div>
+		<section class="producto-detalle-container">
+
+			<div class="producto-slider">
+
+				<div class="producto-display-area">
+					<div class="producto-slide active" data-slide="0">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-01.png"
+							alt="Bolsa de Porte SPE Adulto 1">
+					</div>
+					<div class="producto-slide" data-slide="1">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-02.png"
+							alt="Bolsa de Porte SPE Adulto 2">
+					</div>
+					<div class="producto-slide" data-slide="2">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-03.png"
+							alt="Bolsa de Porte SPE Adulto 3">
+					</div>
+					<div class="producto-slide" data-slide="3">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-04.png"
+							alt="Bolsa de Porte SPE Adulto 4">
+					</div>
+
+					<button class="slider-arrow prev" id="prevSlide">&#10094;</button>
+					<button class="slider-arrow next" id="nextSlide">&#10095;</button>
+				</div>
+
+				<div class="producto-thumbnails">
+					<div class="thumbnail-card active" data-slide="0">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-01.png"
+							alt="Thumbnail 1">
+					</div>
+					<div class="thumbnail-card" data-slide="1">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-02.png"
+							alt="Thumbnail 2">
+					</div>
+					<div class="thumbnail-card" data-slide="2">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-03.png"
+							alt="Thumbnail 3">
+					</div>
+					<div class="thumbnail-card" data-slide="3">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-04.png"
+							alt="Thumbnail 4">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="producto-info">
+				<h1>Porte Super Premium Excellence</h1>
+				<h2>Perros adultos</h2>
+				<p>
+					La fórmula Porte Super Premium Excellence está diseñada para cubrir todas las necesidades de los
+					perros adultos, aportando energía, vitalidad y salud. Contiene 28% de proteínas de alta calidad de
+					pollo y carne magra para mantener músculos fuertes, y 15% de grasas saludables con omega 3 y 6 que
+					favorecen un pelaje brillante y piel sana.
+					Su aporte de fibra y prebióticos mejora la digestión, mientras que las vitaminas A, D y E junto con
+					calcio y fósforo refuerzan huesos y articulaciones. Un alimento completo y equilibrado que asegura
+					bienestar y cuidado en cada porción.
+				</p>
+
+				<div class="etiquetas-container">
+					<img src="../../assets/images/general/etiquetas/nutricion-azul.png" alt="Etiqueta Nutrición">
+					<img src="../../assets/images/general/etiquetas/ingredientes-azul.png" alt="Etiqueta Ingredientes">
+					<img src="../../assets/images/general/etiquetas/digestion-azul.png" alt="Etiqueta Digestión">
+					<img src="../../assets/images/general/etiquetas/pelaje-azul.png" alt="Etiqueta Pelaje">
+					<img src="../../assets/images/general/etiquetas/perro-feliz-azul.png" alt="Etiqueta Perro Feliz">
+				</div>
+			</div>
+
+		</section>
 	</main>
 
 	<div id="footer-placeholder"></div>
 
 	<script src="../../js/components-loader.js"></script>
+	<script src="../../js/detalle-producto.js"></script>
 </body>
+
 </html>
