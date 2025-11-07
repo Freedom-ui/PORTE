@@ -413,3 +413,117 @@
     font-size: 15px;
     color: var(--color-text); /* Negro */
 }
+
+/* --- 
+   4. Estilos de la Sección Información Adicional (CORREGIDO)
+--- */
+
+.info-adicional-section {
+    padding: 2rem 0 4rem 0; 
+}
+
+/* Título (CORREGIDO: Alineación izquierda) */
+.info-adicional-titulo {
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-primary);
+    
+    /* CAMBIO CLAVE: Alineación a la izquierda */
+    text-align: left; 
+    
+    max-width: 1440px; /* Para que el título no ocupe todo el ancho */
+    margin: 0 auto 18px auto; /* Centrado y con margin-bottom */
+    padding: 0 2rem; /* Padding horizontal como las demás secciones */
+    box-sizing: border-box;
+}
+
+.info-cards-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 40px; 
+}
+
+/* Estilos base para AMBAS cards (añadido efecto hover) */
+.info-card {
+    height: 505px;
+    background-color: var(--color-white);
+    border-radius: 16px; 
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    /* --- NUEVO: Efecto hover --- */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.info-card:hover {
+    transform: translateY(-5px); /* Leve movimiento hacia arriba */
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.35); /* Sombra un poco más pronunciada */
+}
+
+
+/* 4.1 Card Izquierda (ANCHO AJUSTADO) */
+.info-card.card-left {
+    /* CAMBIO CLAVE: Ancho ligeramente reducido para mantener la proporción de la imagen */
+    width: 750px; 
+    padding: 40px; 
+}
+
+/* 4.2 Card Derecha (sin cambios de width/padding) */
+.info-card.card-right {
+    width: 406px;
+    padding: 40px 21px; 
+}
+
+/* Imagen dentro de las cards (ALTO FIJO) */
+.info-card img {
+    width: 100%; 
+    height: 345px; /* Altura fija para ambas imágenes */
+    object-fit: cover; /* Asegura que la imagen llene el espacio */
+    border-radius: 12px; 
+}
+
+/* Contenido de texto + botón */
+.info-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; 
+    flex: 1; 
+}
+
+/* Texto de las cards */
+.info-card-content h3 {
+    font-family: var(--font-inria);
+    font-weight: 700; 
+    font-size: 25px;
+    color: var(--color-primary); 
+    line-height: 1.3;
+    margin: 0;
+    flex: 1; 
+    margin-right: 20px;
+}
+
+/* Botón de flecha circular */
+.tip-action {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #0A182A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 6px 14px rgba(10,24,42,0.12);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
