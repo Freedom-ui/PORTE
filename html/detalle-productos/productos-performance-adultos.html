@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +12,258 @@
 	<link rel="stylesheet" href="../../css/detalle-producto.css">
 	<link rel="icon" href="../../assets/icons/porte-favicon.png" type="image/png">
 </head>
+
 <body>
 	<div id="navbar-placeholder"></div>
 
 	<main class="main-content">
-	<!-- ============================================ -->
-    <!-- SECCIÓN: PRODUCTO -->
-    <!-- ============================================ -->
-		<div style="padding: 50px 20px; background-color: #f5f5f5; min-height: 80vh;">
-			<h2>Productos - Performance - Adultos — Contenido de Prueba</h2>
-			<p>Bloque de contenido de relleno para visualizar el navbar y el footer en esta sección.</p>
-			<h3>Sección 1</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 2</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 3</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-		</div>
+		<section class="producto-detalle-container">
+
+			<div class="producto-slider">
+
+				<div class="producto-display-area">
+					<div class="producto-slide active" data-slide="0">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-01.png"
+							alt="Bolsa de Porte Performance Adulto 1">
+					</div>
+					<div class="producto-slide" data-slide="1">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-02.png"
+							alt="Bolsa de Porte Performance Adulto 2">
+					</div>
+					<div class="producto-slide" data-slide="2">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-03.png"
+							alt="Bolsa de Porte Performance Adulto 3">
+					</div>
+					<div class="producto-slide" data-slide="3">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-04.png"
+							alt="Bolsa de Porte Performance Adulto 4">
+					</div>
+
+					<button class="slider-arrow prev" id="prevSlide">&#10094;</button>
+					<button class="slider-arrow next" id="nextSlide">&#10095;</button>
+				</div>
+
+				<div class="producto-thumbnails">
+					<div class="thumbnail-card active" data-slide="0">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-01.png"
+							alt="Thumbnail 1">
+					</div>
+					<div class="thumbnail-card" data-slide="1">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-02.png"
+							alt="Thumbnail 2">
+					</div>
+					<div class="thumbnail-card" data-slide="2">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-03.png"
+							alt="Thumbnail 3">
+					</div>
+					<div class="thumbnail-card" data-slide="3">
+						<img src="../../assets/images/productos/productos-detalles/bolson-performance-adulto-04.png"
+							alt="Thumbnail 4">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="producto-info">
+				<h1>Porte Performance</h1>
+				<h2>Perros adultos</h2>
+				<p>
+					La fórmula Porte Performance está desarrollada para cubrir las demandas energéticas de
+					perros adultos activos, aportando fuerza, resistencia y vitalidad diaria. Contiene 32% de proteínas
+					de alta calidad de pollo y carne magra para mantener músculos firmes, y 18% de grasas saludables con
+					omega 3 y 6 que favorecen un pelaje brillante, piel sana y óptimo rendimiento físico. Su mezcla
+					equilibrada de carbohidratos, pulpa de remolacha y prebióticos mejora la digestión y mantiene una
+					flora intestinal saludable, mientras que las vitaminas A, D y E junto con calcio, zinc y fósforo
+					fortalecen huesos, articulaciones e inmunidad. Un alimento completo que potencia energía, bienestar
+					y desempeño superior.
+				</p>
+
+				<div class="etiquetas-container">
+					<img src="../../assets/images/general/etiquetas/nutricion-verde.png" alt="Etiqueta Nutrición">
+					<img src="../../assets/images/general/etiquetas/ingredientes-verde.png" alt="Etiqueta Ingredientes">
+					<img src="../../assets/images/general/etiquetas/digestion-verde.png" alt="Etiqueta Digestión">
+					<img src="../../assets/images/general/etiquetas/pelaje-verde.png" alt="Etiqueta Pelaje">
+					<img src="../../assets/images/general/etiquetas/perro-feliz-verde.png" alt="Etiqueta Perro Feliz">
+				</div>
+			</div>
+
+		</section>
+
+		<section class="ingredientes-section">
+			<div class="ingredientes-container">
+
+				<div class="ingredientes-col-left">
+
+					<h2 class="ingredientes-titulo">Ingredientes</h2>
+
+					<div class="ingredientes-card">
+						<ul class="ingredientes-lista">
+							<li>
+								<h3>Pollo deshidratado, carne magra de res y salmón deshidratado</h3>
+								<p>Proteínas de alto valor biológico que promueven masa muscular firme y energía sostenida.</p>
+							</li>
+							<li>
+								<h3>Arroz integral, maíz extruido y avena</h3>
+								<p>Fuentes de carbohidratos de liberación controlada que aportan resistencia y vitalidad prolongada.</p>
+							</li>
+							<li>
+								<h3>Aceite de pollo, aceite de pescado y grasa de pollo estabilizada</h3>
+								<p>Grasas saludables ricas en omega 3, 6 y DHA que favorecen el rendimiento físico, la piel y el pelaje.</p>
+							</li>
+							<li>
+								<h3>Pulpa de remolacha y fibra de achicoria</h3>
+								<p>Fibras naturales que mejoran la digestión y favorecen una flora intestinal equilibrada.</p>
+							</li>
+							<li>
+								<h3>Prebióticos (MOS, FOS) y probióticos activos</h3>
+								<p>Estimulan la absorción de nutrientes y fortalecen las defensas naturales.</p>
+							</li>
+							<li>
+								<h3>Vitaminas A, C, D, E y complejo B</h3>
+								<p>Refuerzan visión, sistema inmune, metabolismo energético y salud celular.</p>
+							</li>
+							<li>
+								<h3>Minerales quelados (calcio, fósforo, zinc, hierro, cobre, selenio)</h3>
+								<p>Aseguran mejor absorción, fortalecen huesos, articulaciones y recuperación muscular.</p>
+							</li>
+							<li>
+								<h3>Extracto de levadura y antioxidantes naturales</h3>
+								<p>Apoyan la inmunidad, la digestión y ayudan a combatir el estrés oxidativo.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ingredientes-imagen">
+					<img src="../../assets/images/productos/productos-detalles/plato-comida-performance-adultos.png"
+						alt="Plato de comida Porte Performance Adultos">
+				</div>
+
+			</div>
+		</section>
+
+		<section class="composicion-section">
+			<div class="composicion-container">
+
+				<h2 class="composicion-titulo">Composición Centesimal</h2>
+
+			</div>
+
+			<table class="composicion-tabla">
+				<thead>
+					<tr>
+						<th>Componente</th>
+						<th>Por cada 100g</th>
+						<th>Por cada 1Kg</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Proteína cruda</td>
+						<td>28.0% → 28g</td>
+						<td>280g</td>
+					</tr>
+					<tr>
+						<td>Grasa (lípidos) cruda</td>
+						<td>15.0% → 15g</td>
+						<td>150g</td>
+					</tr>
+					<tr>
+						<td>Fibra cruda</td>
+						<td>3.8% → 3.8g</td>
+						<td>38g</td>
+					</tr>
+					<tr>
+						<td>Humedad</td>
+						<td>10.0% → 10g</td>
+						<td>100g</td>
+					</tr>
+					<tr>
+						<td>Cenizas (minerales)</td>
+						<td>6.5% → 6.5g</td>
+						<td>65g</td>
+					</tr>
+					<tr>
+						<td>Calcio (Ca)</td>
+						<td>1.2% → 1.2g</td>
+						<td>12g</td>
+					</tr>
+					<tr>
+						<td>Fósforo (P)</td>
+						<td>1.0% → 1.0g</td>
+						<td>10g</td>
+					</tr>
+					<tr>
+						<td>Sodio (Na)</td>
+						<td>0.3% → 0.3g</td>
+						<td>3g</td>
+					</tr>
+					<tr>
+						<td>Omega-3 (total)</td>
+						<td>0.6% → 0.6g</td>
+						<td>6g</td>
+					</tr>
+					<tr>
+						<td>Omega-6 (total)</td>
+						<td>2.5% → 2.5g</td>
+						<td>25g</td>
+					</tr>
+					<tr>
+						<td>Vitamina A</td>
+						<td>~1,200 IU → 1,200 UI</td>
+						<td>~12,000 IU/kg</td>
+					</tr>
+					<tr>
+						<td>Vitamina D</td>
+						<td>~120 IU → 120 IU</td>
+						<td>~1,200 IU/kg</td>
+					</tr>
+					<tr>
+						<td>Vitamina E</td>
+						<td>~20 IU → 20 IU</td>
+						<td>~200 IU/kg</td>
+					</tr>
+					<tr>
+						<td>Energía metabolizable (estim.)</td>
+						<td>360 kcal</td>
+						<td>3,600 kcal</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="info-adicional-section">
+
+			<h2 class="info-adicional-titulo">Información adicional</h2>
+
+			<div class="info-cards-container">
+
+				<a href="/html/tips-individuales/porte-tips-alimentacion-01.html" class="info-card card-left">
+					<img src="../../assets/images/productos/productos-detalles/info-adicional-01.png"
+						alt="Etiqueta de alimento">
+					<div class="info-card-content">
+						<h3>Aprende a leer la etiqueta del alimento de tu mascota.</h3>
+						<span class="tip-action">→</span>
+					</div>
+				</a>
+
+				<a href="/html/secciones-tips/porte-tips-alimentacion.html" class="info-card card-right">
+					<img src="../../assets/images/productos/productos-detalles/info-adicional-02.png"
+						alt="Tips de alimentación">
+					<div class="info-card-content">
+						<h3>Los mejores tips para la alimentación de tu mascota.</h3>
+						<span class="tip-action" aria-hidden="true">→</span>
+					</div>
+				</a>
+
+			</div>
+		</section>
 	</main>
 
 	<div id="footer-placeholder"></div>
 
 	<script src="../../js/components-loader.js"></script>
+	<script src="../../js/detalle-producto.js"></script>
 </body>
-</html>
 
+</html>
