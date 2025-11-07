@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +12,257 @@
 	<link rel="stylesheet" href="../../css/detalle-producto.css">
 	<link rel="icon" href="../../assets/icons/porte-favicon.png" type="image/png">
 </head>
+
 <body>
 	<div id="navbar-placeholder"></div>
 
 	<main class="main-content">
-		<div style="padding: 50px 20px; background-color: #f5f5f5; min-height: 80vh;">
-			<h2>Productos - Super - Premium - Excellence - Adultos — Contenido de Prueba</h2>
-			<p>Bloque de contenido de relleno para visualizar el navbar y el footer en esta sección.</p>
-			<h3>Sección 1</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 2</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 3</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-		</div>
+		<section class="producto-detalle-container">
+
+			<div class="producto-slider">
+
+				<div class="producto-display-area">
+					<div class="producto-slide active" data-slide="0">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-01.png"
+							alt="Bolsa de Porte SPE Adulto 1">
+					</div>
+					<div class="producto-slide" data-slide="1">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-02.png"
+							alt="Bolsa de Porte SPE Adulto 2">
+					</div>
+					<div class="producto-slide" data-slide="2">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-03.png"
+							alt="Bolsa de Porte SPE Adulto 3">
+					</div>
+					<div class="producto-slide" data-slide="3">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-04.png"
+							alt="Bolsa de Porte SPE Adulto 4">
+					</div>
+
+					<button class="slider-arrow prev" id="prevSlide">&#10094;</button>
+					<button class="slider-arrow next" id="nextSlide">&#10095;</button>
+				</div>
+
+				<div class="producto-thumbnails">
+					<div class="thumbnail-card active" data-slide="0">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-01.png"
+							alt="Thumbnail 1">
+					</div>
+					<div class="thumbnail-card" data-slide="1">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-02.png"
+							alt="Thumbnail 2">
+					</div>
+					<div class="thumbnail-card" data-slide="2">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-03.png"
+							alt="Thumbnail 3">
+					</div>
+					<div class="thumbnail-card" data-slide="3">
+						<img src="../../assets/images/productos/productos-detalles/bolson-spe-adulto-04.png"
+							alt="Thumbnail 4">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="producto-info">
+				<h1>Porte Super Premium Excellence</h1>
+				<h2>Perros adultos</h2>
+				<p>
+					La fórmula Porte Super Premium Excellence está diseñada para cubrir todas las necesidades de los
+					perros adultos, aportando energía, vitalidad y salud. Contiene 28% de proteínas de alta calidad de
+					pollo y carne magra para mantener músculos fuertes, y 15% de grasas saludables con omega 3 y 6 que
+					favorecen un pelaje brillante y piel sana.
+					Su aporte de fibra y prebióticos mejora la digestión, mientras que las vitaminas A, D y E junto con
+					calcio y fósforo refuerzan huesos y articulaciones. Un alimento completo y equilibrado que asegura
+					bienestar y cuidado en cada porción.
+				</p>
+
+				<div class="etiquetas-container">
+					<img src="../../assets/images/general/etiquetas/nutricion-azul.png" alt="Etiqueta Nutrición">
+					<img src="../../assets/images/general/etiquetas/ingredientes-azul.png" alt="Etiqueta Ingredientes">
+					<img src="../../assets/images/general/etiquetas/digestion-azul.png" alt="Etiqueta Digestión">
+					<img src="../../assets/images/general/etiquetas/pelaje-azul.png" alt="Etiqueta Pelaje">
+					<img src="../../assets/images/general/etiquetas/perro-feliz-azul.png" alt="Etiqueta Perro Feliz">
+				</div>
+			</div>
+
+		</section>
+
+		<section class="ingredientes-section">
+			<div class="ingredientes-container">
+
+				<div class="ingredientes-col-left">
+
+					<h2 class="ingredientes-titulo">Ingredientes</h2>
+
+					<div class="ingredientes-card">
+						<ul class="ingredientes-lista">
+							<li>
+								<h3>Pollo deshidratado y carne magra de res deshidratada</h3>
+								<p>Proteínas de alta digestibilidad para músculos fuertes y energía.</p>
+							</li>
+							<li>
+								<h3>Harina de arroz y maíz integral extruido</h3>
+								<p>Carbohidratos fáciles de asimilar que aportan vitalidad diaria.</p>
+							</li>
+							<li>
+								<h3>Aceite de pollo y aceite de pescado</h3>
+								<p>Grasas saludables con omega 3 y 6 para piel sana, pelaje brillante e inmunidad.</p>
+							</li>
+							<li>
+								<h3>Pulpa de remolacha</h3>
+								<p>Fibra natural que favorece una buena digestión.</p>
+							</li>
+							<li>
+								<h3>Prebióticos (MOS y FOS)</h3>
+								<p>Mejoran la flora intestinal y la absorción de nutrientes.</p>
+							</li>
+							<li>
+								<h3>Vitaminas A, D y E</h3>
+								<p>Apoyan visión, huesos, piel y actúan como antioxidantes.</p>
+							</li>
+							<li>
+								<h3>Minerales (calcio, fósforo, zinc, hierro)</h3>
+								<p>Fortalecen huesos, articulaciones y defensas.</p>
+							</li>
+							<li>
+								<h3>Extracto de levadura</h3>
+								<p>Refuerza la inmunidad y la salud digestiva.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ingredientes-imagen">
+					<img src="../../assets/images/productos/productos-detalles/plato-comida-spe-adultos.png"
+						alt="Plato de comida Porte SPE Adultos">
+				</div>
+
+			</div>
+		</section>
+
+		<section class="composicion-section">
+			<div class="composicion-container">
+
+				<h2 class="composicion-titulo">Composición Centesimal</h2>
+
+			</div>
+
+			<table class="composicion-tabla">
+				<thead>
+					<tr>
+						<th>Componente</th>
+						<th>Por cada 100g</th>
+						<th>Por cada 1Kg</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Proteína cruda</td>
+						<td>28.0% → 28g</td>
+						<td>280g</td>
+					</tr>
+					<tr>
+						<td>Grasa (lípidos) cruda</td>
+						<td>15.0% → 15g</td>
+						<td>150g</td>
+					</tr>
+					<tr>
+						<td>Fibra cruda</td>
+						<td>3.8% → 3.8g</td>
+						<td>38g</td>
+					</tr>
+					<tr>
+						<td>Humedad</td>
+						<td>10.0% → 10g</td>
+						<td>100g</td>
+					</tr>
+					<tr>
+						<td>Cenizas (minerales)</td>
+						<td>6.5% → 6.5g</td>
+						<td>65g</td>
+					</tr>
+					<tr>
+						<td>Calcio (Ca)</td>
+						<td>1.2% → 1.2g</td>
+						<td>12g</td>
+					</tr>
+					<tr>
+						<td>Fósforo (P)</td>
+						<td>1.0% → 1.0g</td>
+						<td>10g</td>
+					</tr>
+					<tr>
+						<td>Sodio (Na)</td>
+						<td>0.3% → 0.3g</td>
+						<td>3g</td>
+					</tr>
+					<tr>
+						<td>Omega-3 (total)</td>
+						<td>0.6% → 0.6g</td>
+						<td>6g</td>
+					</tr>
+					<tr>
+						<td>Omega-6 (total)</td>
+						<td>2.5% → 2.5g</td>
+						<td>25g</td>
+					</tr>
+					<tr>
+						<td>Vitamina A</td>
+						<td>~1,200 IU → 1,200 UI</td>
+						<td>~12,000 IU/kg</td>
+					</tr>
+					<tr>
+						<td>Vitamina D</td>
+						<td>~120 IU → 120 IU</td>
+						<td>~1,200 IU/kg</td>
+					</tr>
+					<tr>
+						<td>Vitamina E</td>
+						<td>~20 IU → 20 IU</td>
+						<td>~200 IU/kg</td>
+					</tr>
+					<tr>
+						<td>Energía metabolizable (estim.)</td>
+						<td>360 kcal</td>
+						<td>3,600 kcal</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="info-adicional-section">
+
+			<h2 class="info-adicional-titulo">Información adicional</h2>
+
+			<div class="info-cards-container">
+
+				<a href="/html/tips-individuales/porte-tips-alimentacion-01.html" class="info-card card-left">
+					<img src="../../assets/images/productos/productos-detalles/info-adicional-01.png"
+						alt="Etiqueta de alimento">
+					<div class="info-card-content">
+						<h3>Aprende a leer la etiqueta del alimento de tu mascota.</h3>
+						<span class="tip-action">→</span>
+					</div>
+				</a>
+
+				<a href="/html/secciones-tips/porte-tips-alimentacion.html" class="info-card card-right">
+					<img src="../../assets/images/productos/productos-detalles/info-adicional-02.png"
+						alt="Tips de alimentación">
+					<div class="info-card-content">
+						<h3>Los mejores tips para la alimentación de tu mascota.</h3>
+						<span class="tip-action" aria-hidden="true">→</span>
+					</div>
+				</a>
+
+			</div>
+		</section>
 	</main>
 
 	<div id="footer-placeholder"></div>
 
 	<script src="../../js/components-loader.js"></script>
+	<script src="../../js/detalle-producto.js"></script>
 </body>
+
 </html>

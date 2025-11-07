@@ -1,0 +1,529 @@
+.producto-detalle-container {
+    max-width: 1440px;
+    height: 588px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+
+.producto-detalle-container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: calc(100% + 40px);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+.producto-slider {
+    width: 395px;
+    height: 588px;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-display-area {
+    width: 100%;
+    height: 490px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.95);
+}
+
+.producto-slide.active {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.producto-slide img {
+    width: 327px;
+    height: 490px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 10px 20px rgba(10,24,42,0.15));
+}
+
+.producto-slide:hover img {
+    transform: scale(1.05);
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    z-index: 10;
+}
+
+.producto-display-area:hover .slider-arrow {
+    opacity: 1;
+}
+
+.slider-arrow:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(10,24,42,0.2);
+}
+
+.slider-arrow.prev {
+    left: 4px;
+}
+
+.slider-arrow.next {
+    right: 4px;
+}
+
+.producto-thumbnails {
+    width: 100%;
+    height: 82px;
+    margin-top: auto;
+    
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.thumbnail-card {
+    width: 82px;
+    height: 82px;
+    border: 2px solid #EAEAEA;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.thumbnail-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-card:hover {
+    border-color: #CCCCCC;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.thumbnail-card.active {
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(10,24,42,0.2);
+}
+
+
+.producto-info {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.producto-info h1 {
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--color-primary);
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.producto-info h2 {
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-text);
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 43px;
+}
+
+.producto-info p {
+    font-family: 'InstrumentSans-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.etiquetas-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.etiquetas-container img {
+    width: 110px;
+    height: 110px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+}
+
+.etiquetas-container img:hover {
+    transform: translateY(-8px) rotate(5deg);
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.15));
+}
+
+/* --- 
+   2. Estilos de la Sección de Ingredientes (CORREGIDO - PUNTOS Y ALINEACIÓN)
+--- */
+
+.ingredientes-section { 
+    padding: 2rem 0;
+}
+
+.ingredientes-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    /* CAMBIO CLAVE: Alinear la card y la imagen por sus centros */
+    align-items: center; 
+    gap: 165px; 
+}
+
+.ingredientes-col-left {
+    display: flex;
+    flex-direction: column;
+    width: 657px; 
+}
+
+.ingredientes-titulo {
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-primary);
+    margin: 0;
+    margin-bottom: 18px; 
+}
+
+.ingredientes-card {
+    width: 690px;
+    background-color: var(--color-white);
+    border-radius: 16px; 
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25); 
+    padding: 15px 45px; 
+    box-sizing: border-box;
+}
+
+.ingredientes-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredientes-lista li {
+    position: relative; 
+    padding-left: 30px; /* Espacio para el punto */
+    margin-bottom: 25px; 
+}
+
+.ingredientes-lista li:last-child {
+    margin-bottom: 0;
+}
+
+/* --- CAMBIOS CLAVE AQUÍ PARA EL PUNTO REDONDO --- */
+.ingredientes-lista li::before {
+    content: ''; /* Usamos un elemento vacío y lo estilizamos como círculo */
+    
+    /* Propiedades del círculo */
+    display: block;
+    width: 12px;  /* Ancho del punto */
+    height: 12px; /* Alto del punto */
+    border-radius: 50%; /* Lo hace redondo */
+    background-color: var(--color-primary); /* Color azul principal */
+    
+    position: absolute;
+    left: 0;
+    top: 10px; /* Ajuste vertical para alinearse con el texto (aproximado, puedes ajustar) */
+}
+
+
+.ingredientes-lista h3 {
+    font-family: var(--font-inria);
+    font-weight: 700; 
+    font-size: 25px;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.ingredientes-lista p {
+    font-family: var(--font-instrument);
+    font-weight: 400; 
+    font-size: 20px;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 4px; 
+}
+
+
+.ingredientes-imagen {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0; 
+    /* CAMBIO CLAVE: Eliminar el margin-top para que se alinee con el centro de la card */
+    /* margin-top: 66px; */ 
+}
+
+.ingredientes-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 16px; 
+}
+
+/* --- 
+   3. Estilos de la Sección Composición Centesimal
+--- */
+
+.composicion-section {
+    /* Separación estándar */ 
+    padding: 2rem 0;
+}
+
+/* Contenedor para el título, usa el ancho máximo */
+.composicion-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+/* Título "Composición Centesimal" */
+.composicion-titulo {
+    /* Reutiliza estilos de h2 (Ingredientes) */
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-primary);
+    margin: 0;
+    
+    /* Gap vertical hasta la tabla */
+    margin-bottom: 30px; 
+    
+    /* Asegura alineación izquierda (layout estándar) */
+    text-align: left; 
+}
+
+/* Tabla de Composición */
+.composicion-tabla {
+    /* Ancho total (544px) */
+    width: 900px; 
+    
+    /* Centrada en la página */
+    margin: 0 auto; 
+    
+    /* Estilo de borde y colapso */
+    border: 1px solid #0a182a; /* Línea negra fina exterior */
+    border-collapse: collapse; 
+    
+    /* Fondo blanco (como pediste) */
+    background-color: var(--color-white); 
+}
+
+/* Celdas de Encabezado (th) y Datos (td) */
+.composicion-tabla th,
+.composicion-tabla td {
+    /* Ancho de columna (544px / 3) */
+    width: 181.33px; 
+    /* Alto de fila (900px / 15) */
+    height: 40px;
+    
+    /* Bordes internos (líneas negras finas) */
+    border: 1px solid #000; 
+    
+    /* Alineación de texto (Alineado a la izquierda según tu imagen) */
+    text-align: center;
+    vertical-align: middle;
+    
+    /* Padding para que no esté pegado al borde */
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilo Encabezados (th) */
+.composicion-tabla th {
+    font-family: var(--font-inria);
+    font-weight: 700; /* Bold */
+    font-size: 18px;
+    color: var(--color-primary); /* Azul primario */
+}
+
+/* Estilo Datos (td) */
+.composicion-tabla td {
+    font-family: 'InstrumentSans-Regular', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 15px;
+    color: var(--color-text); /* Negro */
+}
+
+/* --- 
+   4. Estilos de la Sección Información Adicional (CORREGIDO)
+--- */
+
+.info-adicional-section {
+    padding: 2rem 0 4rem 0; 
+}
+
+/* Título (CORREGIDO: Alineación izquierda) */
+.info-adicional-titulo {
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-primary);
+    
+    /* CAMBIO CLAVE: Alineación a la izquierda */
+    text-align: left; 
+    
+    max-width: 1440px; /* Para que el título no ocupe todo el ancho */
+    margin: 0 auto 18px auto; /* Centrado y con margin-bottom */
+    padding: 0 2rem; /* Padding horizontal como las demás secciones */
+    box-sizing: border-box;
+}
+
+.info-cards-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 40px; 
+}
+
+/* Estilos base para AMBAS cards (añadido efecto hover) */
+.info-card {
+    height: 505px;
+    background-color: var(--color-white);
+    border-radius: 16px; 
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    /* --- NUEVO: Efecto hover --- */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.info-card:hover {
+    transform: translateY(-5px); /* Leve movimiento hacia arriba */
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.35); /* Sombra un poco más pronunciada */
+}
+
+
+/* 4.1 Card Izquierda (ANCHO AJUSTADO) */
+.info-card.card-left {
+    /* CAMBIO CLAVE: Ancho ligeramente reducido para mantener la proporción de la imagen */
+    width: 750px; 
+    padding: 40px; 
+}
+
+/* 4.2 Card Derecha (sin cambios de width/padding) */
+.info-card.card-right {
+    width: 406px;
+    padding: 40px 21px; 
+}
+
+/* Imagen dentro de las cards (ALTO FIJO) */
+.info-card img {
+    width: 100%; 
+    height: 345px; /* Altura fija para ambas imágenes */
+    object-fit: cover; /* Asegura que la imagen llene el espacio */
+    border-radius: 12px; 
+}
+
+/* Contenido de texto + botón */
+.info-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; 
+    flex: 1; 
+}
+
+/* Texto de las cards */
+.info-card-content h3 {
+    font-family: var(--font-inria);
+    font-weight: 700; 
+    font-size: 25px;
+    color: var(--color-primary); 
+    line-height: 1.3;
+    margin: 0;
+    flex: 1; 
+    margin-right: 20px;
+}
+
+/* Botón de flecha circular */
+.tip-action {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #0A182A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 6px 14px rgba(10,24,42,0.12);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
