@@ -214,3 +214,118 @@
     transform: translateY(-8px) rotate(5deg);
     filter: drop-shadow(0 8px 15px rgba(0,0,0,0.15));
 }
+
+/* --- 
+   2. Estilos de la Sección de Ingredientes (CORREGIDO - PUNTOS Y ALINEACIÓN)
+--- */
+
+.ingredientes-section {
+    margin-top: 56px; 
+    padding: 2rem 0;
+}
+
+.ingredientes-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    /* CAMBIO CLAVE: Alinear la card y la imagen por sus centros */
+    align-items: center; 
+    gap: 165px; 
+}
+
+.ingredientes-col-left {
+    display: flex;
+    flex-direction: column;
+    width: 657px; 
+}
+
+.ingredientes-titulo {
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-primary);
+    margin: 0;
+    margin-bottom: 18px; 
+}
+
+.ingredientes-card {
+    width: 690px;
+    background-color: var(--color-white);
+    border-radius: 16px; 
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25); 
+    padding: 15px 45px; 
+    box-sizing: border-box;
+}
+
+.ingredientes-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredientes-lista li {
+    position: relative; 
+    padding-left: 30px; /* Espacio para el punto */
+    margin-bottom: 25px; 
+}
+
+.ingredientes-lista li:last-child {
+    margin-bottom: 0;
+}
+
+/* --- CAMBIOS CLAVE AQUÍ PARA EL PUNTO REDONDO --- */
+.ingredientes-lista li::before {
+    content: ''; /* Usamos un elemento vacío y lo estilizamos como círculo */
+    
+    /* Propiedades del círculo */
+    display: block;
+    width: 12px;  /* Ancho del punto */
+    height: 12px; /* Alto del punto */
+    border-radius: 50%; /* Lo hace redondo */
+    background-color: var(--color-primary); /* Color azul principal */
+    
+    position: absolute;
+    left: 0;
+    top: 10px; /* Ajuste vertical para alinearse con el texto (aproximado, puedes ajustar) */
+}
+
+
+.ingredientes-lista h3 {
+    font-family: var(--font-inria);
+    font-weight: 700; 
+    font-size: 25px;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.ingredientes-lista p {
+    font-family: var(--font-instrument);
+    font-weight: 400; 
+    font-size: 20px;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 4px; 
+}
+
+
+.ingredientes-imagen {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0; 
+    /* CAMBIO CLAVE: Eliminar el margin-top para que se alinee con el centro de la card */
+    /* margin-top: 66px; */ 
+}
+
+.ingredientes-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 16px; 
+}
