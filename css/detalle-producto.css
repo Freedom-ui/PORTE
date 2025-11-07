@@ -219,8 +219,7 @@
    2. Estilos de la Sección de Ingredientes (CORREGIDO - PUNTOS Y ALINEACIÓN)
 --- */
 
-.ingredientes-section {
-    margin-top: 56px; 
+.ingredientes-section { 
     padding: 2rem 0;
 }
 
@@ -328,4 +327,89 @@
     height: 100%;
     object-fit: cover; 
     border-radius: 16px; 
+}
+
+/* --- 
+   3. Estilos de la Sección Composición Centesimal
+--- */
+
+.composicion-section {
+    /* Separación estándar */ 
+    padding: 2rem 0;
+}
+
+/* Contenedor para el título, usa el ancho máximo */
+.composicion-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+/* Título "Composición Centesimal" */
+.composicion-titulo {
+    /* Reutiliza estilos de h2 (Ingredientes) */
+    font-family: var(--font-inria);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-primary);
+    margin: 0;
+    
+    /* Gap vertical hasta la tabla */
+    margin-bottom: 30px; 
+    
+    /* Asegura alineación izquierda (layout estándar) */
+    text-align: left; 
+}
+
+/* Tabla de Composición */
+.composicion-tabla {
+    /* Ancho total (544px) */
+    width: 900px; 
+    
+    /* Centrada en la página */
+    margin: 0 auto; 
+    
+    /* Estilo de borde y colapso */
+    border: 1px solid #0a182a; /* Línea negra fina exterior */
+    border-collapse: collapse; 
+    
+    /* Fondo blanco (como pediste) */
+    background-color: var(--color-white); 
+}
+
+/* Celdas de Encabezado (th) y Datos (td) */
+.composicion-tabla th,
+.composicion-tabla td {
+    /* Ancho de columna (544px / 3) */
+    width: 181.33px; 
+    /* Alto de fila (900px / 15) */
+    height: 40px;
+    
+    /* Bordes internos (líneas negras finas) */
+    border: 1px solid #000; 
+    
+    /* Alineación de texto (Alineado a la izquierda según tu imagen) */
+    text-align: center;
+    vertical-align: middle;
+    
+    /* Padding para que no esté pegado al borde */
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilo Encabezados (th) */
+.composicion-tabla th {
+    font-family: var(--font-inria);
+    font-weight: 700; /* Bold */
+    font-size: 18px;
+    color: var(--color-primary); /* Azul primario */
+}
+
+/* Estilo Datos (td) */
+.composicion-tabla td {
+    font-family: 'InstrumentSans-Regular', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 15px;
+    color: var(--color-text); /* Negro */
 }
