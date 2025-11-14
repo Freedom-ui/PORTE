@@ -1,0 +1,142 @@
+/* ============================================ */
+/* PORTE TIPS - PÁGINA PRINCIPAL Y CATEGORÍAS */
+/* ============================================ */
+
+.main-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  zoom: 0.8;
+  /* Añadimos un padding horizontal por si acaso */
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* ============================================ */
+/* TÍTULO PRINCIPAL CON LÍNEAS */
+/* ============================================ */
+
+.titulo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.titulo-principal h1 {
+  /* Usando variables globales para consistencia */
+  font-family: var(--font-inria);
+  font-weight: 700;
+  font-size: 70px;
+  color: var(--color-primary); /* Usando color primario */
+  margin: 0;
+  white-space: nowrap; /* Evita que el título se parta */
+}
+
+.titulo-principal .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+  max-width: 530px;
+}
+
+/* ============================================ */
+/* SECCIÓN DE CATEGORÍA (En porte-tips.html) */
+/* ============================================ */
+
+.tips-categoria-section {
+  margin-bottom: 56px;
+}
+
+/* Header de cada categoría */
+.tips-categoria-header {
+  margin-bottom: 40px;
+  /* Aseguramos que los títulos de sección se alineen 
+     con el grid de abajo si el contenedor es centrado */
+  max-width: 1440px; /* 460*3 + 30*2 = 1440 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tips-categoria-title {
+  font-family: var(--font-inria);
+  font-weight: 700;
+  font-size: 56px;
+  color: var(--color-primary);
+  margin: 0 0 8px;
+  line-height: 1;
+}
+
+.tips-categoria-subtitle {
+  font-family: var(--font-instrument);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* ============================================ */
+/* GRID DE CARDS (Usado en todas las págs de tips) */
+/* ============================================ */
+
+.tips-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 460px);
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card individual */
+.tip-card {
+  width: 460px;
+  height: 505px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px); /* Leve movimiento hacia arriba */
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.35); /* Sombra un poco más pronunciada */
+}
+
+.tip-card-imagen {
+  width: 413px; /* 460 - 24*2 = 412, ajusto a 413 */
+  height: 345px;
+  object-fit: cover;
+  margin: 37px 24px 0 24px; /* Top: 37px, Lados: 24px */
+  border-radius: 8px; 
+}
+
+.tip-card-contenido {
+  padding: 20px 24px 24px 24px; /* Ajuste de padding top */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-card-titulo {
+  font-family: var(--font-inria);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--color-text);
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.tip-card-texto {
+  font-family: var(--font-instrument);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text-light); /* Un poco más suave */
+  margin: 0;
+  line-height: 1.4;
+}
