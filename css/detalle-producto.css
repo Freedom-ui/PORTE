@@ -1,3 +1,7 @@
+.main-content {
+    zoom: 0.8;
+}
+
 .producto-detalle-container {
     max-width: 1440px;
     height: 588px;
