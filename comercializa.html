@@ -15,21 +15,148 @@
 	<div id="navbar-placeholder"></div>
 
 	<main class="main-content">
-		<div style="padding: 50px 20px; background-color: #f5f5f5; min-height: 80vh;">
-			<h2>Comercializa — Contenido de Prueba</h2>
-			<p>Bloque de contenido de relleno para visualizar el navbar y el footer en esta sección.</p>
-			<h3>Sección 1</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 2</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-			<h3>Sección 3</h3>
-			<p>Contenido de ejemplo para ocupar espacio en la página.</p>
-		</div>
+		<!-- Sección del formulario -->
+		<section class="formulario-section">
+			<!-- Título principal con líneas (contenedor separado) -->
+			<div class="titulo-con-lineas">
+				<span class="linea"></span>
+				<h1 class="comercializa-titulo">Comercializa</h1>
+				<span class="linea"></span>
+			</div>
+
+			<!-- Subtítulo y formulario -->
+			<div class="comercializa-header">
+				<div class="comercializa-subtitulo">
+					<h2>Datos personales</h2>
+					<p>Rellená un pequeño formulario para poder comercializar PORTE</p>
+				</div>
+			</div>
+
+			<!-- Contenedor del formulario con fondo -->
+			<div class="formulario-container">
+				<h2 class="formulario-titulo">Tipo de cliente</h2>
+				
+				<!-- Botones de tipo de cliente -->
+				<div class="tipo-cliente-buttons">
+					<button type="button" class="tipo-btn active" data-tipo="pet-shop">Pet Shop</button>
+					<button type="button" class="tipo-btn" data-tipo="distribuidora">Distribuidora</button>
+					<button type="button" class="tipo-btn" data-tipo="consumidor">Consumidor final</button>
+				</div>
+
+				<!-- Formulario -->
+				<form id="comercializaForm" class="comercializa-form">
+					<div class="form-row">
+						<div class="form-group">
+							<label for="nombre">Nombre</label>
+							<input type="text" id="nombre" name="nombre" placeholder="Ej: Juan" required>
+						</div>
+						<div class="form-group">
+							<label for="apellido">Apellido</label>
+							<input type="text" id="apellido" name="apellido" placeholder="Ej: Martínez" required>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="telefono">Teléfono</label>
+							<input type="tel" id="telefono" name="telefono" placeholder="Ej: +54(0223)123-456780" required>
+						</div>
+						<div class="form-group">
+							<label for="email">E-mail</label>
+							<input type="email" id="email" name="email" placeholder="Ej: juanmartinez78@gmail.com" required>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="pais">País</label>
+							<input type="text" id="pais" name="pais" placeholder="Ej: Argentina" required>
+						</div>
+						<div class="form-group">
+							<label for="provincia">Provincia</label>
+							<input type="text" id="provincia" name="provincia" placeholder="Ej: Buenos Aires" required>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="localidad">Localidad</label>
+							<input type="text" id="localidad" name="localidad" placeholder="Ej: Mar del Plata" required>
+						</div>
+						<div class="form-group">
+							<label for="codigo-postal">Código postal</label>
+							<input type="text" id="codigo-postal" name="codigo-postal" placeholder="Ej: 7600" required>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="calle">Calle</label>
+							<input type="text" id="calle" name="calle" placeholder="Ej: Avenida Colón" required>
+						</div>
+						<div class="form-group">
+							<label for="altura">Altura</label>
+							<input type="text" id="altura" name="altura" placeholder="Ej: 4380" required>
+						</div>
+					</div>
+
+					<div class="form-group form-group-full">
+						<label for="mensaje">Mensaje</label>
+						<textarea id="mensaje" name="mensaje" rows="4" placeholder="Ej: Somos Buscadora Los Andes, trabajamos actualmente con más de 40 pet shops en la región de Mar del Plata y estamos buscando agregar PORTE a nuestro catálogo para ofrecer a nuestros clientes. Quisiéramos recibir información sobre precios mayoristas, condiciones de compra y plazos de entrega. Quedamos atentos a su respuesta." required></textarea>
+					</div>
+
+					<div class="form-submit">
+						<button type="submit" class="btn-enviar">Enviar datos</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<!-- Sección: ¿Te quedaron dudas? -->
+		<section class="dudas-section">
+			<div class="dudas-container">
+				<div class="dudas-header">
+					<h2 class="dudas-titulo">¿Te quedaron dudas?</h2>
+					<p class="dudas-subtitulo">Contactá directamente con nosotros por el medio que te quede más cómodo</p>
+				</div>
+
+				<div class="dudas-card">
+					<div class="dudas-imagen-container">
+						<img src="assets/images/comercializa/portada-dudas.png" alt="Perro con dudas" class="dudas-imagen">
+					</div>
+					<div class="dudas-contenido">
+						<h3 class="dudas-card-titulo">Contáctanos</h3>
+						<p class="dudas-card-texto">Si no encontrás la respuesta que buscás, no dudes en contactarnos. Nuestro equipo está listo para ayudarte con cualquier consulta.</p>
+						<a href="contacto.html" class="dudas-btn">
+							<span>→</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección: Newsletter Banner -->
+		<section class="newsletter-section">
+			<div class="newsletter-banner">
+				<div class="newsletter-contenido">
+					
+					<form class="newsletter-form" id="newsletterFormComercializa">
+						<input 
+							type="email" 
+							class="newsletter-input" 
+							placeholder="Ingresá tu e-mail" 
+							required
+						>
+						<button type="submit" class="newsletter-btn">Suscríbete</button>
+					</form>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<div id="footer-placeholder"></div>
 
 	<script src="js/components-loader.js"></script>
+	<script src="js/forms.js"></script>
 </body>
 </html>
-
