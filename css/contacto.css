@@ -1,0 +1,333 @@
+/* ============================================ */
+/* TÍTULO PRINCIPAL CON LÍNEAS */
+/* ============================================ */
+
+.titulo-con-lineas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  padding-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.titulo-con-lineas .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+  max-width: 300px;
+}
+
+.contacto-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 64px;
+  color: var(--color-primary);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ============================================ */
+/* SECCIÓN: PREGUNTAS FRECUENTES */
+/* ============================================ */
+
+.preguntas-section {
+  width: 100%;
+  padding: 25px 20px 40px;
+  background-color: #fff;
+}
+
+.preguntas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header de la sección */
+.preguntas-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.preguntas-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 48px;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.preguntas-subtitulo {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* Card principal */
+.preguntas-card {
+  max-width: 590px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  border-right: 4px solid #ccc;
+  border-bottom: 4px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.preguntas-imagen-container {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.preguntas-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.preguntas-contenido {
+  padding: 30px 40px;
+  position: relative;
+}
+
+.preguntas-card-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 28px;
+  color: var(--color-primary);
+  margin: 0 0 15px 0;
+}
+
+.preguntas-card-texto {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  padding-right: 80px;
+}
+
+/* Botón circular con flecha */
+.preguntas-btn {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(10, 24, 42, 0.2);
+  transition: all 0.3s ease;
+}
+
+.preguntas-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(10, 24, 42, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacto-titulo {
+    font-size: 48px;
+  }
+
+  .preguntas-titulo {
+    font-size: 36px;
+  }
+
+  .preguntas-subtitulo {
+    font-size: 16px;
+  }
+
+  .preguntas-card {
+    max-width: 100%;
+  }
+
+  .preguntas-imagen-container {
+    height: 240px;
+  }
+
+  .preguntas-contenido {
+    padding: 25px 30px 90px;
+  }
+
+  .preguntas-card-titulo {
+    font-size: 24px;
+  }
+
+  .preguntas-card-texto {
+    font-size: 15px;
+    padding-right: 0;
+  }
+
+  .preguntas-btn {
+    right: 20px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+  }
+}
+
+/* ============================================ */
+/* SECCIÓN: MÉTODOS DE CONTACTO */
+/* ============================================ */
+
+.metodos-contacto-section {
+  width: 100%;
+  padding: 20px 20px 80px;
+  background-color: #fff;
+}
+
+.metodos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metodos-card {
+  background-color: #fff;
+  border-radius: 12px;
+  border-right: 4px solid #ccc;
+  border-bottom: 4px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px 40px 15%;
+}
+
+.metodos-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 48px;
+  color: var(--color-primary);
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.metodos-subtitulo {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+
+.metodos-contenido {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+.metodos-imagen-container {
+  width: 600px;
+  height: 295px;
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.metodos-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.metodos-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.metodo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 18px;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 60%;
+  min-height: 60px;
+}
+
+.metodo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-primary);
+}
+
+.metodo-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.metodos-texto-footer {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  margin-left: -15%;
+  width: calc(100% + 15%);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .metodos-contenido {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .metodos-imagen-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .metodos-card {
+    padding: 30px 25px;
+  }
+
+  .metodos-titulo {
+    font-size: 36px;
+  }
+
+  .metodos-subtitulo {
+    font-size: 16px;
+  }
+
+  .metodo-btn {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .metodo-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .metodos-texto-footer {
+    font-size: 15px;
+  }
+}

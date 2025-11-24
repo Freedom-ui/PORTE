@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px 100px;
+  padding: 25px 20px 50px;
   background-color: #fff;
 }
 
@@ -18,7 +18,8 @@
   justify-content: center;
   gap: 25px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .titulo-con-lineas .linea {
@@ -39,7 +40,7 @@
 /* Header fuera del formulario */
 .comercializa-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .comercializa-subtitulo h2 {
@@ -258,7 +259,7 @@
 
 .dudas-section {
   width: 100%;
-  padding: 10px 20px 100px;
+  padding: 40px 20px 40px;
   background-color: #fff;
 }
 
@@ -270,7 +271,7 @@
 /* Header de la sección */
 .dudas-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .dudas-titulo {
@@ -404,7 +405,7 @@
 
 .newsletter-section {
   width: 100%;
-  padding: 40px 20px 80px;
+  padding: 60px 20px 80px;
   background-color: #fff;
 }
 
@@ -426,7 +427,7 @@
 
 .newsletter-contenido {
   max-width: 500px;
-  padding-top: 190px;
+  padding-top: 120px;
 }
 
 .newsletter-titulo {
