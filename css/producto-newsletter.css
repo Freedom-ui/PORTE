@@ -1,0 +1,113 @@
+/* ==================================================== 
+   SECCIÓN: NEWSLETTER 
+==================================================== */
+.newsletter-section {
+  padding: 56px 30px 0;
+  max-width: 1440px;
+  margin: 0 auto 56px;
+}
+
+.newsletter-container {
+  width: 100%;
+  height: 400px;
+  background-image: url("../assets/images/general/newsletter/banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-content {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+  max-width: 500px;
+}
+
+.newsletter-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "InstrumentSans-Regular", sans-serif;
+  background: white;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.newsletter-input:focus {
+  box-shadow: 0 0 0 3px rgba(10, 24, 42, 0.1);
+}
+
+.newsletter-input::placeholder {
+  color: #999;
+}
+
+.newsletter-button {
+  border: none;
+  border-radius: 10px;
+  background: #0a182a;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "InriaSans-Regular", sans-serif;
+  cursor: pointer;
+  padding: 16px 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(10, 24, 42, 0.25);
+}
+
+@media (max-width: 768px) {
+  .newsletter-section {
+    padding: 56px 20px 0;
+  }
+
+  .newsletter-container {
+    height: 300px;
+    background-image: url("../assets/images/general/newsletter/banner-mobile.jpg");
+    border-radius: 16px;
+  }
+
+  .newsletter-content {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 400px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter-input,
+  .newsletter-button {
+    width: 100%;
+  }
+
+  .newsletter-button {
+    padding: 14px 24px;
+  }
+}

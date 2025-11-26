@@ -1,156 +1,329 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Porte - Productos" />
+    <title>Productos - Porte</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/productos.css" />
+    <link rel="stylesheet" href="css/producto-tips.css" />
+    <link rel="stylesheet" href="css/producto-newsletter.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Porte - Productos">
-  <title>Productos - Porte</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/productos.css">
-  <link rel="icon" href="assets/icons/porte-favicon.png" type="image/png">
 
+    <link rel="icon" href="assets/icons/porte-favicon.png" type="image/png" />
+  </head>
 
-  
-</head>
+  <body>
+    <div id="navbar-placeholder"></div>
 
-<body>
-  <div id="navbar-placeholder"></div>
+    <main class="main-content">
+      <!-- ============================================ -->
+      <!-- SECCIÓN: CARDS PRODUCTOS -->
+      <!-- ============================================ -->
 
-  <main class="main-content">
-    <!-- ============================================ -->
-    <!-- SECCIÓN: CARDS PRODUCTOS -->
-    <!-- ============================================ -->
-    <section class="productos-section">
-      <div class="contenedor-productos">
-        <!-- Título -->
-        <div class=" titulo-productos">
-          <span class="linea"></span>
-          <h2>Productos</h2>
-          <span class="linea"></span>
-        </div>
-        <div class="producto-card producto01-card">
-          <a class="btn-ver-producto btn-ver-producto-mod01  text-white px-4 py-2 sm:text-sm sm:text-white sm:px-1 sm:py-4" href="/html/detalle-productos/productos-spe-adultos.html">Ver producto</a>
-        </div>
-        <div class="producto-card producto02-card">
-          <a class="btn-ver-producto btn-ver-producto-mod02  text-base px-4 py-2 sm:text-sm sm:px-10 sm:py-4" href="/html/detalle-productos/productos-spe-cachorros.html">Ver producto</a>
-        </div>
-        <div class="producto-card producto03-card">
-          <a class="btn-ver-producto btn-ver-producto-mod03 text-base px-4 py-2 sm:text-2xl sm:px-10 sm:py-4" href="/html/detalle-productos/productos-performance-adultos.html">Ver
-            producto</a>
-        </div>
-      </div>
-    </section>
-    <!-- ============================================ -->
-    <!-- SECCIÓN: PORTE TIPS -->
-    <!-- ============================================ -->
-    <section class="tips-section">
-      <div class="container">
-        <header class="tips-header">
-          <h2>Porte Tips</h2>
-          <p>Descubrí todo acerca del cuidado y la atención que ellos merecen</p>
-        </header>
+      <section class="productos-section">
+        <div class="container">
+          <header class="productos-header">
+            <h2>Nuestros productos</h2>
+            <p>Explora una variedad de alimentos de la mejor calidad</p>
+          </header>
 
-        <div class="tips-grid">
-          <!-- Feature tip -->
-          <a class="tip-feature" href="html/tips-individuales/porte-tips-comportamiento-01.html">
-            <img src="assets/images/tips/lenguaje-corporal.png" alt="Aprende a leer su lenguaje corporal"
-              class="tip-feature-img">
-            <div class="tip-feature-body">
-              <h3 class="tip-feature-title">Aprende a leer su lenguaje corporal en unos minutos</h3>
-              <p class="tip-feature-excerpt">Desde mover la cola, hasta olfatearte de pies a cabeza, con esta simple
-                guía aprenderás a entender que es lo que te quieren decir con sus gestos</p>
-            </div>
-            <span class="tip-action" aria-hidden="true">→</span>
-          </a>
-
-          <!-- Small tips list -->
-          <div class="tips-list">
-            <a class="tip-card" href="/html/tips-individuales/porte-tips-alimentacion-01.html">
-              <img src="assets/images/tips/actividad-interiores.png" alt="Cómo mantener a tu mascota activa"
-                class="tip-thumb">
-              <div class="tip-card-body">
-                <h4 class="tip-card-title">Cómo mantener a tu mascota activa en interiores</h4>
-                <p class="tip-card-excerpt">Juegos y actividades para hacer que tu mascota se mueva sin salir de casa
-                </p>
+          <div class="productos-grid">
+            <article class="producto-card">
+              <div class="producto-media">
+                <div class="contenedor-imagen-texto">
+                  <img
+                    src="assets/images/general/bolsones/bolson-spe-adulto.png"
+                    alt="PORTE Super Premium - Perros Adultos"
+                    class="producto-img"
+                  />
+                  <div class="texto-imagen">
+                    <p>Porte</p>
+                    <h3 class="producto-title">
+                      Super Premium Excellence "Perros Adultos"
+                    </h3>
+                    <ul>
+                      <li>28% proteinas de pollo y carne magra</li>
+                      <li>15% grasas saludables con omega 3 y 6</li>
+                      <li>Favorece musculos fuertes y energia vital</li>
+                      <li>Fibra y prebioticos mejoran la digestion</li>
+                      <li>
+                        Vitaminas A, D, E fortaleces huesos y articulaciones
+                      </li>
+                      <li>
+                        Alimento completo, equilibrado y saludable para perros
+                        adultos
+                      </li>
+                    </ul>
+                    <div class="btn-container">
+                      <a
+                        class="btn btn-blue"
+                        href="/html/detalle-productos/productos-spe-adultos.html"
+                        >Ver producto</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
-            </a>
+            </article>
 
-            <a class="tip-card" href="/html/tips-individuales/porte-tips-salud-01.html">
-              <img src="assets/images/tips/guia-entrenar-cachorro.png" alt="Guía para entrenar a tu cachorro"
-                class="tip-thumb">
-              <div class="tip-card-body">
-                <h4 class="tip-card-title">Guía definitiva para entrenar a tu cachorro</h4>
-                <p class="tip-card-excerpt">Paso a paso de como acompañar su crecimiento con técnicas sencillas</p>
+            <article class="producto-card">
+              <div class="producto-media">
+                <div class="contenedor-imagen-texto">
+                  <div class="texto-imagen">
+                    <p>Porte</p>
+                    <h3 class="producto-title">
+                      Super Premium Excellence "Perros Cachorros"
+                    </h3>
+                    <ul>
+                      <li>30% proteinas de pollo y pescado de alta calidad</li>
+                      <li>
+                        Favorece desarrollo de musculos y tejidos en crecimiento
+                      </li>
+                      <li>17% grasas saludables con omega 3 y DHA</li>
+                      <li>Estimula desarrollo cerebral y de la vision</li>
+                      <li>Promueve un pelaje brillante y saludable</li>
+                      <li>Fibra y prebioticos facilitan digestion suave.</li>
+                      <li>
+                        Calcio, fosforo y vitamina D fortalecen huesos y dientes
+                      </li>
+                      <li>
+                        Aporta energia y nutricion completa para cachorros.
+                      </li>
+                    </ul>
+                    <div class="btn-container">
+                      <a
+                        class="btn btn-celeste"
+                        href="/html/detalle-productos/productos-spe-cachorros.html"
+                        >Ver producto</a
+                      >
+                    </div>
+                  </div>
+                  <img
+                    src="assets/images/general/bolsones/bolson-spe-cachorro.png"
+                    alt="PORTE Super Premium - Perros Cachorros"
+                    class="producto-img"
+                  />
+                </div>
               </div>
-            </a>
+            </article>
 
-            <a class="tip-card" href="/html/tips-individuales/porte-tips-higiene-01.html">
-              <img src="assets/images/tips/tips-pelaje.png" alt="Tips para un pelaje suave" class="tip-thumb">
-              <div class="tip-card-body">
-                <h4 class="tip-card-title">Tips para un pelaje suave, sano y brilloso</h4>
-                <p class="tip-card-excerpt">Aprendé en esta guía pequeños tips para mantener su piel y pelo saludable
-                </p>
+            <article class="producto-card">
+              <div class="producto-media">
+                <div class="contenedor-imagen-texto">
+                  <img
+                    src="assets/images/general/bolsones/bolson-performance-adulto.png"
+                    alt="PORTE Performance - Perros Adultos"
+                    class="producto-img"
+                  />
+                  <div class="texto-imagen">
+                    <p>Porte</p>
+                    <h3 class="producto-title">Performance "Perros Adultos"</h3>
+                    <ul>
+                      <li>
+                        32% proteinas de pollo y pescado para musculos fuertes
+                      </li>
+                      <li>18% grasas saludables con omega 3 y 6.</li>
+                      <li>Aporta energia, vitalidad y resistencia diaria.</li>
+                      <li>Fibra natural y prebióticos mejoran la digestion.</li>
+                      <li>
+                        Calcio, fosforo y vitaminas B fortalecen articulaciones
+                      </li>
+                      <li>
+                        Nutrición completa para perros adultos muy activos.
+                      </li>
+                    </ul>
+                    <div class="btn-container">
+                      <a
+                        class="btn btn-green"
+                        href="/html/detalle-productos/productos-performance-adultos.html"
+                        >Ver producto</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
-            </a>
+            </article>
           </div>
         </div>
+      </section>
+      <!-- ============================================ -->
+      <!-- SECCIÓN: PORTE TIPS -->
+      <!-- ============================================ -->
+      <section class="tips-section">
+        <div class="container">
+          <header class="tips-header">
+            <h2>Porte Tips</h2>
+            <p>
+              Descubrí todo acerca del cuidado y la atención que ellos merecen
+            </p>
+          </header>
 
-        <div class="tips-cta">
-          <a class="btn btn-cta" href="/porte-tips.html">Ver todos ↗</a>
-        </div>
-      </div>
-    </section>
-    <!-- ============================================ -->
-    <!-- SECCIÓN: FAMILIA PORTE -->
-    <!-- ============================================ -->
-    <section class="familia-porte-section">
-      <div class="familia-porte-header">
-        <h2 class="familia-porte-title">Familia Porte</h2>
-        <p class="familia-porte-subtitle">Conocé más acerca de nosotros y como te brindamos el mejor producto posible
-        </p>
-      </div>
+          <div class="tips-grid">
+            <!-- Feature tip -->
+            <a
+              class="tip-feature"
+              href="html/tips-individuales/porte-tips-comportamiento-01.html"
+            >
+              <img
+                src="assets/images/tips/lenguaje-corporal.png"
+                alt="Aprende a leer su lenguaje corporal"
+                class="tip-feature-img"
+              />
+              <div class="tip-feature-body">
+                <h3 class="tip-feature-title">
+                  Aprende a leer su lenguaje corporal en unos minutos
+                </h3>
+                <p class="tip-feature-excerpt">
+                  Desde mover la cola, hasta olfatearte de pies a cabeza, con
+                  esta simple guía aprenderás a entender que es lo que te
+                  quieren decir con sus gestos
+                </p>
+              </div>
+              <span class="tip-action" aria-hidden="true">→</span>
+            </a>
 
-      <div class="familia-porte-container">
-        <div class="familia-porte-contenido">
-          <p class="familia-porte-texto">
-            La rigurosidad en la selección de las materias primas, los controles minuciosos a lo largo de todo el
-            proceso, junto a la tecnología de punta, aseguran productos de altísima calidad certificada, atributo
-            fundamental para una gama de productos comercializados exclusivamente en canal veterinario.
-          </p>
-          <a href="familia-porte.html" class="btn-cta">Ver más ↗</a>
-        </div>
+            <!-- Small tips list -->
+            <div class="tips-list">
+              <a
+                class="tip-card"
+                href="/html/tips-individuales/porte-tips-alimentacion-01.html"
+              >
+                <img
+                  src="assets/images/tips/actividad-interiores.png"
+                  alt="Cómo mantener a tu mascota activa"
+                  class="tip-thumb"
+                />
+                <div class="tip-card-body">
+                  <h4 class="tip-card-title">
+                    Cómo mantener a tu mascota activa en interiores
+                  </h4>
+                  <p class="tip-card-excerpt">
+                    Juegos y actividades para hacer que tu mascota se mueva sin
+                    salir de casa
+                  </p>
+                </div>
+              </a>
 
-        <div class="familia-porte-imagen-container">
-          <img src="assets/images/general/familia-porte/familia-porte-01.png" alt="Familia Porte - Fabricación"
-            class="familia-porte-imagen">
-        </div>
-      </div>
-    </section>
-    <!-- ============================================ -->
-    <!-- SECCIÓN: NEWSLETTER -->
-    <!-- ============================================ -->
-    <section class="newsletter-section">
-      <div class="newsletter-container">
-        <div class="newsletter-content">
-          <form id="newsletterForm" class="newsletter-form" onsubmit="return false;">
-            <div class="form-group">
-              <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Ingresá tu e-mail" required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-              <button type="submit" class="newsletter-button px-[36px] py-[14px] sm:px-10 sm:py-10">Suscribirme</button>
+              <a
+                class="tip-card"
+                href="/html/tips-individuales/porte-tips-salud-01.html"
+              >
+                <img
+                  src="assets/images/tips/guia-entrenar-cachorro.png"
+                  alt="Guía para entrenar a tu cachorro"
+                  class="tip-thumb"
+                />
+                <div class="tip-card-body">
+                  <h4 class="tip-card-title">
+                    Guía definitiva para entrenar a tu cachorro
+                  </h4>
+                  <p class="tip-card-excerpt">
+                    Paso a paso de como acompañar su crecimiento con técnicas
+                    sencillas
+                  </p>
+                </div>
+              </a>
+
+              <a
+                class="tip-card"
+                href="/html/tips-individuales/porte-tips-higiene-01.html"
+              >
+                <img
+                  src="assets/images/tips/tips-pelaje.png"
+                  alt="Tips para un pelaje suave"
+                  class="tip-thumb"
+                />
+                <div class="tip-card-body">
+                  <h4 class="tip-card-title">
+                    Tips para un pelaje suave, sano y brilloso
+                  </h4>
+                  <p class="tip-card-excerpt">
+                    Aprendé en esta guía pequeños tips para mantener su piel y
+                    pelo saludable
+                  </p>
+                </div>
+              </a>
             </div>
-          </form>
+          </div>
+
+          <div class="tips-cta">
+            <a class="btn btn-cta" href="/porte-tips.html">Ver todos ↗</a>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <!-- ============================================ -->
+      <!-- SECCIÓN: FAMILIA PORTE -->
+      <!-- ============================================ -->
+      <section class="familia-porte-section">
+        <div class="familia-porte-header">
+          <h2 class="familia-porte-title">Familia Porte</h2>
+          <p class="familia-porte-subtitle">
+            Conocé más acerca de nosotros y como te brindamos el mejor producto
+            posible
+          </p>
+        </div>
 
-  <div id="footer-placeholder"></div>
+        <div class="familia-porte-container">
+          <div class="familia-porte-contenido">
+            <p class="familia-porte-texto">
+              La rigurosidad en la selección de las materias primas, los
+              controles minuciosos a lo largo de todo el proceso, junto a la
+              tecnología de punta, aseguran productos de altísima calidad
+              certificada, atributo fundamental para una gama de productos
+              comercializados exclusivamente en canal veterinario.
+            </p>
+            <a href="familia-porte.html" class="btn-cta">Ver más ↗</a>
+          </div>
 
-  <script src="js/components-loader.js"></script>
-</body>
+          <div class="familia-porte-imagen-container">
+            <img
+              src="assets/images/general/familia-porte/familia-porte-01.png"
+              alt="Familia Porte - Fabricación"
+              class="familia-porte-imagen"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- ============================================ -->
+      <!-- SECCIÓN: NEWSLETTER -->
+      <!-- ============================================ -->
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <form
+              id="newsletterForm"
+              class="newsletter-form"
+              onsubmit="return false;"
+            >
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="newsletterEmail"
+                  class="newsletter-input"
+                  placeholder="Ingresá tu e-mail"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                />
+                <button
+                  type="submit"
+                  class="newsletter-button px-[36px] py-[14px] sm:px-10 sm:py-10"
+                >
+                  Suscribirme
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components-loader.js"></script>
+  </body>
 </html>
