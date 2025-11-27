@@ -2,39 +2,44 @@
 /* TÍTULO PRINCIPAL CON LÍNEAS */
 /* ============================================ */
 
+.main-content {
+  zoom: 0.8;
+}
+
 .titulo-con-lineas {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
   width: 100%;
-  padding-top: 25px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 45px;
 }
 
 .titulo-con-lineas .linea {
   flex: 1;
   height: 2px;
   background-color: #ccc;
-  max-width: 300px;
+  max-width: 530px;
 }
 
 .contacto-titulo {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 64px;
+  font-size: 70px;
   color: var(--color-primary);
   margin: 0;
   white-space: nowrap;
 }
 
 /* ============================================ */
-/* SECCIÓN: PREGUNTAS FRECUENTES */
+/* SECCIÓN: PREGUNTAS FRECUENTES - CORREGIDA */
 /* ============================================ */
 
 .preguntas-section {
   width: 100%;
-  padding: 25px 20px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 56px;
   background-color: #fff;
 }
 
@@ -43,17 +48,18 @@
   margin: 0 auto;
 }
 
-/* Header de la sección */
+/* Header - CORREGIDO: Alineado a la izquierda */
 .preguntas-header {
-  text-align: center;
-  margin-bottom: 25px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .preguntas-titulo {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 48px;
+  font-size: 56px;
   color: var(--color-primary);
   margin: 0 0 8px 0;
+  line-height: 1;
 }
 
 .preguntas-subtitulo {
@@ -63,23 +69,32 @@
   margin: 0;
 }
 
-/* Card principal */
+/* Card - CORREGIDA: Tamaño estándar 460x505 y sombras consistentes */
 .preguntas-card {
-  max-width: 590px;
+  width: 460px;
+  height: 505px;
   margin: 0 auto;
   background-color: #fff;
-  border-radius: 12px;
-  border-right: 4px solid #ccc;
-  border-bottom: 4px solid #ccc;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.preguntas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .preguntas-imagen-container {
-  width: 100%;
-  height: 320px;
+  width: 413px;
+  height: 345px;
+  margin: 37px 24px 0 24px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .preguntas-imagen {
@@ -90,31 +105,35 @@
 }
 
 .preguntas-contenido {
-  padding: 30px 40px;
+  padding: 0 24px 24px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .preguntas-card-titulo {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   color: var(--color-primary);
-  margin: 0 0 15px 0;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
 }
 
 .preguntas-card-texto {
   font-family: 'InstrumentSans-Regular', sans-serif;
   font-size: 16px;
-  color: #666;
-  line-height: 1.6;
+  color: #0A182A;
+  line-height: 1.4;
   margin: 0;
-  padding-right: 80px;
+  padding-right: 70px;
 }
 
-/* Botón circular con flecha */
+/* Botón circular - Posicionado como en las otras cards */
 .preguntas-btn {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 18px;
+  bottom: 18px;
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -123,68 +142,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 24px;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(10, 24, 42, 0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(10, 24, 42, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .preguntas-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(10, 24, 42, 0.3);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .contacto-titulo {
-    font-size: 48px;
-  }
-
-  .preguntas-titulo {
-    font-size: 36px;
-  }
-
-  .preguntas-subtitulo {
-    font-size: 16px;
-  }
-
-  .preguntas-card {
-    max-width: 100%;
-  }
-
-  .preguntas-imagen-container {
-    height: 240px;
-  }
-
-  .preguntas-contenido {
-    padding: 25px 30px 90px;
-  }
-
-  .preguntas-card-titulo {
-    font-size: 24px;
-  }
-
-  .preguntas-card-texto {
-    font-size: 15px;
-    padding-right: 0;
-  }
-
-  .preguntas-btn {
-    right: 20px;
-    bottom: 20px;
-    width: 56px;
-    height: 56px;
-    font-size: 28px;
-  }
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px rgba(10, 24, 42, 0.16);
 }
 
 /* ============================================ */
-/* SECCIÓN: MÉTODOS DE CONTACTO */
+/* SECCIÓN: MÉTODOS DE CONTACTO - CORREGIDA */
 /* ============================================ */
 
 .metodos-contacto-section {
   width: 100%;
-  padding: 20px 20px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 56px;
   background-color: #fff;
 }
 
@@ -196,18 +173,25 @@
 .metodos-card {
   background-color: #fff;
   border-radius: 12px;
-  border-right: 4px solid #ccc;
-  border-bottom: 4px solid #ccc;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* CORREGIDO: Sombras estándar */
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
   padding: 40px 50px 40px 12%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.metodos-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* CORREGIDO: Títulos alineados a la izquierda */
 .metodos-titulo {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 48px;
+  font-size: 56px;
   color: var(--color-primary);
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
   text-align: left;
+  line-height: 1;
 }
 
 .metodos-subtitulo {
@@ -292,6 +276,14 @@
 }
 
 /* Responsive */
+@media (max-width: 1440px) {
+  .preguntas-section,
+  .metodos-contacto-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media (max-width: 968px) {
   .metodos-contenido {
     grid-template-columns: 1fr;
@@ -302,32 +294,38 @@
     max-width: 100%;
     margin: 0 auto;
   }
+
+  .metodo-btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
+  .contacto-titulo {
+    font-size: 48px;
+  }
+
+  .preguntas-titulo,
+  .metodos-titulo {
+    font-size: 42px;
+  }
+
+  .preguntas-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .preguntas-imagen-container {
+    width: calc(100% - 48px);
+    height: 250px;
+  }
+
   .metodos-card {
     padding: 30px 25px;
   }
 
-  .metodos-titulo {
-    font-size: 36px;
-  }
-
-  .metodos-subtitulo {
-    font-size: 16px;
-  }
-
-  .metodo-btn {
-    font-size: 16px;
-    padding: 12px 15px;
-  }
-
-  .metodo-icon {
-    width: 35px;
-    height: 35px;
-  }
-
   .metodos-texto-footer {
-    font-size: 15px;
+    margin-left: 0;
+    width: 100%;
   }
 }

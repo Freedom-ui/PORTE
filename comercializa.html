@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 	<link rel="stylesheet" href="css/comercializa.css">
 	<link rel="icon" href="assets/icons/porte-favicon.png" type="image/png">
 </head>
+
 <body>
 	<div id="navbar-placeholder"></div>
 
@@ -35,7 +37,7 @@
 			<!-- Contenedor del formulario con fondo -->
 			<div class="formulario-container">
 				<h2 class="formulario-titulo">Tipo de cliente</h2>
-				
+
 				<!-- Botones de tipo de cliente -->
 				<div class="tipo-cliente-buttons">
 					<button type="button" class="tipo-btn active" data-tipo="pet-shop">Pet Shop</button>
@@ -59,11 +61,13 @@
 					<div class="form-row">
 						<div class="form-group">
 							<label for="telefono">Teléfono</label>
-							<input type="tel" id="telefono" name="telefono" placeholder="Ej: +54(0223)123-456780" required>
+							<input type="tel" id="telefono" name="telefono" placeholder="Ej: +54(0223)123-456780"
+								required>
 						</div>
 						<div class="form-group">
 							<label for="email">E-mail</label>
-							<input type="email" id="email" name="email" placeholder="Ej: juanmartinez78@gmail.com" required>
+							<input type="email" id="email" name="email" placeholder="Ej: juanmartinez78@gmail.com"
+								required>
 						</div>
 					</div>
 
@@ -102,7 +106,9 @@
 
 					<div class="form-group form-group-full">
 						<label for="mensaje">Mensaje</label>
-						<textarea id="mensaje" name="mensaje" rows="4" placeholder="Ej: Somos Buscadora Los Andes, trabajamos actualmente con más de 40 pet shops en la región de Mar del Plata y estamos buscando agregar PORTE a nuestro catálogo para ofrecer a nuestros clientes. Quisiéramos recibir información sobre precios mayoristas, condiciones de compra y plazos de entrega. Quedamos atentos a su respuesta." required></textarea>
+						<textarea id="mensaje" name="mensaje" rows="4"
+							placeholder="Ej: Somos Buscadora Los Andes, trabajamos actualmente con más de 40 pet shops en la región de Mar del Plata y estamos buscando agregar PORTE a nuestro catálogo para ofrecer a nuestros clientes. Quisiéramos recibir información sobre precios mayoristas, condiciones de compra y plazos de entrega. Quedamos atentos a su respuesta."
+							required></textarea>
 					</div>
 
 					<div class="form-submit">
@@ -117,16 +123,19 @@
 			<div class="dudas-container">
 				<div class="dudas-header">
 					<h2 class="dudas-titulo">¿Te quedaron dudas?</h2>
-					<p class="dudas-subtitulo">Contactá directamente con nosotros por el medio que te quede más cómodo</p>
+					<p class="dudas-subtitulo">Contactá directamente con nosotros por el medio que te quede más cómodo
+					</p>
 				</div>
 
 				<div class="dudas-card">
 					<div class="dudas-imagen-container">
-						<img src="assets/images/comercializa/portada-dudas.png" alt="Perro con dudas" class="dudas-imagen">
+						<img src="assets/images/comercializa/portada-dudas.png" alt="Perro con dudas"
+							class="dudas-imagen">
 					</div>
 					<div class="dudas-contenido">
 						<h3 class="dudas-card-titulo">Contáctanos</h3>
-						<p class="dudas-card-texto">Si no encontrás la respuesta que buscás, no dudes en contactarnos. Nuestro equipo está listo para ayudarte con cualquier consulta.</p>
+						<p class="dudas-card-texto">Si no encontrás la respuesta que buscás, no dudes en contactarnos.
+							Nuestro equipo está listo para ayudarte con cualquier consulta.</p>
 						<a href="contacto.html" class="dudas-btn">
 							<span>→</span>
 						</a>
@@ -137,17 +146,13 @@
 
 		<!-- Sección: Newsletter Banner -->
 		<section class="newsletter-section">
-			<div class="newsletter-banner">
-				<div class="newsletter-contenido">
-					
+			<div class="newsletter-container">
+				<div class="newsletter-content">
 					<form class="newsletter-form" id="newsletterFormComercializa">
-						<input 
-							type="email" 
-							class="newsletter-input" 
-							placeholder="Ingresá tu e-mail" 
-							required
-						>
-						<button type="submit" class="newsletter-btn">Suscríbete</button>
+						<div class="newsletter-form-group"> <!-- CAMBIO: form-group → newsletter-form-group -->
+							<input type="email" class="newsletter-input" placeholder="Ingresá tu e-mail" required>
+							<button type="submit" class="newsletter-button">Suscribirme</button>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -159,4 +164,5 @@
 	<script src="js/components-loader.js"></script>
 	<script src="js/forms.js"></script>
 </body>
+
 </html>

@@ -2,16 +2,21 @@
 /* SECCIÓN: FORMULARIO COMERCIALIZA */
 /* ============================================ */
 
+.main-content {
+  zoom: 0.8;
+}
+
 .formulario-section {
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 25px 20px 40px;
+  padding: 56px 30px 0;
   background-color: #fff;
 }
 
-/* Título con líneas a los costados (contenedor independiente) */
+/* Título con líneas a los costados */
 .titulo-con-lineas {
   display: flex;
   align-items: center;
@@ -19,35 +24,38 @@
   gap: 25px;
   width: 100%;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 .titulo-con-lineas .linea {
   flex: 1;
   height: 2px;
   background-color: #ccc;
-  max-width: 300px;
+  max-width: 530px;
 }
 
 .comercializa-titulo {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 64px;
+  font-size: 70px;
   color: var(--color-primary);
   margin: 0;
   white-space: nowrap;
 }
 
-/* Header fuera del formulario */
+/* Header - CORREGIDO: Alineado a la izquierda */
 .comercializa-header {
-  text-align: center;
-  margin-bottom: 25px;
+  text-align: left;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .comercializa-subtitulo h2 {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 48px;
+  font-size: 56px;
   color: var(--color-primary);
   margin: 0 0 8px 0;
+  line-height: 1;
 }
 
 .comercializa-subtitulo p {
@@ -59,7 +67,9 @@
 
 /* Contenedor del formulario */
 .formulario-container {
-  width: 920px;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
   min-height: 855px;
   background-color: var(--color-primary);
   background-image: url('../assets/images/comercializa/form-background-desktop.png');
@@ -194,72 +204,15 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive */
-@media (max-width: 1400px) {
-  .formulario-container {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .comercializa-titulo {
-    font-size: 48px;
-  }
-
-  .comercializa-subtitulo h2 {
-    font-size: 24px;
-  }
-
-  .comercializa-subtitulo p {
-    font-size: 16px;
-  }
-
-  .formulario-container {
-    width: 100%;
-    padding: 40px 30px;
-    background-size: cover;
-  }
-
-  .formulario-titulo {
-    font-size: 24px;
-  }
-
-  .tipo-cliente-buttons {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .tipo-btn {
-    width: 100%;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .form-group label {
-    font-size: 14px;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    font-size: 13px;
-  }
-
-  .btn-enviar {
-    width: 100%;
-    font-size: 16px;
-  }
-}
-
 /* ============================================ */
 /* SECCIÓN: ¿TE QUEDARON DUDAS? */
 /* ============================================ */
 
 .dudas-section {
   width: 100%;
-  padding: 40px 20px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 56px 30px 0;
   background-color: #fff;
 }
 
@@ -268,17 +221,18 @@
   margin: 0 auto;
 }
 
-/* Header de la sección */
+/* Header - Alineado a la izquierda */
 .dudas-header {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .dudas-titulo {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 48px;
+  font-size: 56px;
   color: var(--color-primary);
-  margin: 0 0 15px 0;
+  margin: 0 0 8px 0;
+  line-height: 1;
 }
 
 .dudas-subtitulo {
@@ -288,23 +242,32 @@
   margin: 0;
 }
 
-/* Card principal */
+/* Card - Tamaño estándar 460x505 */
 .dudas-card {
-  max-width: 590px;
+  width: 460px;
+  height: 505px;
   margin: 0 auto;
   background-color: #fff;
-  border-radius: 12px;
-  border-right: 4px solid #ccc;
-  border-bottom: 4px solid #ccc;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.dudas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .dudas-imagen-container {
-  width: 100%;
-  height: 320px;
+  width: 413px;
+  height: 345px;
+  margin: 37px 24px 0 24px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .dudas-imagen {
@@ -315,31 +278,35 @@
 }
 
 .dudas-contenido {
-  padding: 30px 40px;
+  padding: 0 24px 24px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .dudas-card-titulo {
   font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   color: var(--color-primary);
-  margin: 0 0 15px 0;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
 }
 
 .dudas-card-texto {
   font-family: 'InstrumentSans-Regular', sans-serif;
   font-size: 16px;
-  color: #666;
-  line-height: 1.6;
+  color: #0A182A;
+  line-height: 1.4;
   margin: 0;
-  padding-right: 80px;
+  padding-right: 70px;
 }
 
-/* Botón circular con flecha */
+/* Botón circular */
 .dudas-btn {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 18px;
+  bottom: 18px;
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -348,182 +315,159 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 24px;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(10, 24, 42, 0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(10, 24, 42, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .dudas-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(10, 24, 42, 0.3);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .dudas-titulo {
-    font-size: 36px;
-  }
-
-  .dudas-subtitulo {
-    font-size: 16px;
-  }
-
-  .dudas-card {
-    max-width: 100%;
-  }
-
-  .dudas-imagen-container {
-    height: 240px;
-  }
-
-  .dudas-contenido {
-    padding: 25px 30px 90px;
-  }
-
-  .dudas-card-titulo {
-    font-size: 24px;
-  }
-
-  .dudas-card-texto {
-    font-size: 15px;
-    padding-right: 0;
-  }
-
-  .dudas-btn {
-    right: 20px;
-    bottom: 20px;
-    width: 56px;
-    height: 56px;
-    font-size: 28px;
-  }
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px rgba(10, 24, 42, 0.16);
 }
 
 /* ============================================ */
-/* SECCIÓN: NEWSLETTER BANNER */
+/* SECCIÓN: NEWSLETTER */
 /* ============================================ */
 
 .newsletter-section {
-  width: 100%;
-  padding: 40px 20px 80px;
-  background-color: #fff;
+  padding: 56px 0 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 56px;
 }
 
-.newsletter-banner {
-  max-width: 90%;
+.newsletter-container {
   width: 100%;
   height: 400px;
-  margin: 0 auto;
   background-image: url('../assets/images/general/newsletter/banner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
 }
 
-.newsletter-contenido {
+.newsletter-content {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
   max-width: 500px;
-  padding-top: 190px;
-}
-
-.newsletter-titulo {
-  font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 56px;
-  color: var(--color-secondary);
-  line-height: 1.1;
-  margin: 0 0 15px 0;
-}
-
-.newsletter-texto {
-  font-family: 'InstrumentSans-Regular', sans-serif;
-  font-size: 16px;
-  color: var(--color-secondary);
-  line-height: 1.5;
-  margin: 0 0 25px 0;
+  padding: 20px;
 }
 
 .newsletter-form {
+  width: 100%;
+}
+
+.newsletter-form-group {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 400px;
+  gap: 10px;
+  max-width: 450px;
+  margin-top: 200px;
+  margin-left: 30px;
 }
 
 .newsletter-input {
-  padding: 14px 20px;
+  flex: 1;
+  padding: 0px 80px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-size: 16px;
   font-family: 'InstrumentSans-Regular', sans-serif;
-  font-size: 15px;
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  background: white;
+  color: #333;
   outline: none;
   transition: box-shadow 0.3s ease;
 }
 
-.newsletter-input::placeholder {
-  color: rgba(10, 24, 42, 0.5);
-}
-
 .newsletter-input:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
-.newsletter-btn {
-  padding: 14px 30px;
+.newsletter-button {
+  padding: 14px 36px;
   border: none;
-  border-radius: 8px;
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-  font-family: 'InriaSans-Bold', sans-serif;
-  font-size: 18px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  color: #0A182A;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'InriaSans-Bold', 'InriaSans-Regular', sans-serif;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  align-self: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.newsletter-btn:hover {
+.newsletter-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
-  .newsletter-banner {
-    max-width: 95%;
+/* ============================================ */
+/* RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 1440px) {
+  .formulario-section,
+  .dudas-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .newsletter-section {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .newsletter-banner {
+  .comercializa-titulo {
+    font-size: 48px;
+  }
+
+  .comercializa-subtitulo h2 {
+    font-size: 36px;
+  }
+
+  .formulario-container {
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dudas-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .dudas-imagen-container {
+    width: calc(100% - 48px);
+    height: 250px;
+  }
+
+  .newsletter-container {
     height: auto;
     padding: 40px 30px;
+  }
+
+  .newsletter-content {
+    position: static;
+    transform: none;
     max-width: 100%;
+    padding: 0;
   }
 
-  .newsletter-contenido {
-    max-width: 100%;
+  .newsletter-form-group {
+    flex-direction: column;
+    margin: 0;
   }
 
-  .newsletter-titulo {
-    font-size: 42px;
-  }
-
-  .newsletter-texto {
-    font-size: 15px;
-  }
-
-  .newsletter-form {
-    max-width: 100%;
-  }
-
-  .newsletter-btn {
+  .newsletter-button {
     width: 100%;
-    font-size: 16px;
   }
 }
