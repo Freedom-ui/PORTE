@@ -125,10 +125,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // ========================================
   // NEWSLETTER FORM
   // ========================================
-  const newsletterForm = document.getElementById('newsletterFormComercializa');
-  
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
+  // Attach submit handlers to all newsletter forms on the page. This covers
+  // pages that include more than one form or that use an id like
+  // newsletterFormComercializa. We prefer to use the .newsletter-form class.
+  const newsletterForms = document.querySelectorAll('.newsletter-form');
+
+  if (newsletterForms && newsletterForms.length) {
+    newsletterForms.forEach(newsletterForm => {
+      newsletterForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
       const emailInput = this.querySelector('.newsletter-input');
@@ -161,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       alert('¡Gracias por suscribirte! Recibirás nuestras novedades pronto.');
       emailInput.value = '';
+      });
     });
   }
 });
