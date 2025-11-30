@@ -1,0 +1,193 @@
+.main-content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    zoom: 0.8;
+}
+
+.preguntas-frecuentes-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* CORRECCIÓN 1: Padding lateral estándar (2rem) y eliminación de padding-top excesivo */
+    padding: 0 2rem; 
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 56px;
+}
+
+/* Título con líneas a los costados */
+.titulo-con-lineas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 50px; 
+    margin-bottom: 45px;
+}
+
+.titulo-con-lineas .linea {
+    flex: 1;
+    height: 2px;
+    background-color: #ccc;
+    max-width: 530px;
+}
+
+.preguntas-frecuentes-titulo {
+    font-family: 'InriaSans-Bold', sans-serif;
+    font-size: 64px; 
+    color: var(--color-primary);
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* ============================ */
+/* SECCIÓN: PREGUNTAS DESPLEGABLES */
+/* ============================ */
+
+details {
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 8px 0;
+}
+
+summary {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+details p {
+  padding: 8px 0 12px;
+  color: #555;
+}
+
+.faq-container {
+    max-width: 1000px; 
+    margin: 0 auto 40px;
+}   
+
+/* ============================ */
+/* SECCIÓN: ¿TE QUEDARON DUDAS? */
+/* ============================ */
+
+.dudas-section {
+    width: 100%;
+    padding: 56px 2rem 56px; 
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.dudas-container {
+    max-width: 1440px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.dudas-header {
+    text-align: left;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 920px; 
+}
+
+.dudas-titulo {
+    font-family: 'InriaSans-Bold', sans-serif;
+    font-size: 56px;
+    color: var(--color-primary);
+    margin-left: -115px;
+    line-height: 1;
+}
+
+.dudas-subtitulo {
+    font-family: 'InstrumentSans-Regular', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin-left: -110px;
+}
+
+.dudas-card {
+    width: 460px;
+    height: 505px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25); 
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.dudas-card:hover {
+    transform: translateY(-5px);
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.35); 
+}
+
+.dudas-imagen-container {
+    width: 413px;
+    height: 345px;
+    margin: 37px 24px 0 24px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.dudas-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.dudas-contenido {
+    padding: 0 24px 24px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.dudas-card-titulo {
+    font-family: 'InriaSans-Bold', sans-serif;
+    font-size: 26px;
+    color: var(--color-primary);
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.dudas-card-texto {
+    font-family: 'InstrumentSans-Regular', sans-serif;
+    font-size: 16px;
+    color: #0A182A;
+    line-height: 1.4;
+    margin: 0;
+    padding-right: 70px;
+}
+
+/* Botón circular */
+.dudas-btn {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgba(10, 24, 42, 0.12);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.dudas-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 18px rgba(10, 24, 42, 0.16);
+}
