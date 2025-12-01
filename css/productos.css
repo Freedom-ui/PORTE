@@ -7,11 +7,11 @@
   justify-content: center;
   width: 100%;
   padding: 55px 0 0;
-  background: #fff;
 }
 
-@media screen {
-  .productos-section{
+/* MÓVIL: Padding reducido */
+@media (max-width: 767px) {
+  .productos-section {
     padding: 20px 0 0;
   }
 }
@@ -31,7 +31,7 @@
   margin-bottom: 45px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .titulo-productos {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -168,7 +168,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .familia-porte-title {
     font-size: 42px;
   }
@@ -192,19 +192,31 @@
   padding: 0 30px;
 }
 
+/* MÓVIL: Padding reducido */
+@media (max-width: 767px) {
+  .productos-section .container {
+    padding: 0 16px;
+  }
+}
+
+/* TABLET: Padding intermedio */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .productos-section .container {
+    padding: 0 24px;
+  }
+}
+
 /* HEADER */
+.productos-header {
+  text-align: left;
+}
+
 .productos-header h2 {
   font-size: 56px;
   color: #0A182A;
   margin: 0 0 8px;
   line-height: 1;
   font-family: 'InriaSans-Bold', sans-serif;
-}
-
-@media (max-width: 768px) {
-  .productos-header h2 {
-    font-size: 40px;
-  }
 }
 
 .productos-header p {
@@ -214,9 +226,31 @@
   font-family: 'InstrumentSans-Regular', sans-serif;
 }
 
-@media (max-width: 768px) {
+/* TABLET: Tamaños ajustados */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .productos-header h2 {
+    font-size: 48px;
+  }
+  
   .productos-header p {
-    margin-bottom: 14px;
+    font-size: 17px;
+    margin-bottom: 32px;
+  }
+}
+
+/* MÓVIL: Tamaños reducidos */
+@media (max-width: 767px) {
+  .productos-header {
+    text-align: center;
+  }
+  
+  .productos-header h2 {
+    font-size: 32px;
+  }
+  
+  .productos-header p {
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 
@@ -228,11 +262,26 @@
   align-items: start;
 }
 
+/* TABLET: Gap reducido */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .productos-grid {
+    gap: 40px;
+  }
+}
+
+/* MÓVIL: Gap más pequeño */
+@media (max-width: 767px) {
+  .productos-grid {
+    gap: 32px;
+  }
+}
+
 /* CARD */
 .producto-card {
-  background: brown;
+  background: transparent;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
 }
 
 /* CONTENEDOR PRINCIPAL */
@@ -241,30 +290,40 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  width: 60%;
-  margin: 30px;
-  background: rgba(255, 255, 255, 0.7); /* Blanco con 70% de opacidad */
-  backdrop-filter: blur(4px); /* opcional para efecto glass */
+  width: 100%;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
   border-radius: 12px;
-
-
+  padding: 20px;
 }
 
-/* DESKTOP: Layout horizontal */
+/* TABLET: Layout horizontal */
 @media (min-width: 768px) {
   .contenedor-imagen-texto {
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
   }
 }
-@media(max-width: 768px){
+
+/* MÓVIL: Layout vertical */
+@media (max-width: 767px) {
   .contenedor-imagen-texto {
     align-items: center;
     background: none;
+    backdrop-filter: none;
     margin: 0;
-    width: 100% ;
+    width: 100%;
+    padding: 0;
+    gap: 20px;
   }
+  
   .producto-card {
     background: none;
   }
@@ -276,9 +335,16 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* o flex-start */
+  justify-content: center;
   padding: 0;
   min-height: 300px;
+}
+
+/* MÓVIL: Altura mínima reducida */
+@media (max-width: 767px) {
+  .producto-media {
+    min-height: auto;
+  }
 }
 
 /* IMAGEN DEL PRODUCTO */
@@ -292,17 +358,30 @@
   object-fit: contain;
 }
 
+/* MÓVIL: Imagen más pequeña */
 @media (max-width: 767px) {
   .producto-img {
-    width: 200px;
-    height: 300px;
+    max-width: 200px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
   }
 }
 
+/* TABLET: Imagen ajustada */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .producto-img {
+    max-width: 45%;
+    max-height: 450px;
+    flex-shrink: 0;
+  }
+}
 
-@media (min-width: 768px) {
+/* DESKTOP: Imagen completa */
+@media (min-width: 1024px) {
   .producto-img {
     max-width: 50%;
+    max-height: 550px;
     flex-shrink: 0;
   }
 }
@@ -314,12 +393,22 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 0 20px ;
+  padding: 0;
 }
 
+/* TABLET Y DESKTOP: Texto al 50% */
 @media (min-width: 768px) {
   .texto-imagen {
     max-width: 50%;
+    padding: 0 20px;
+  }
+}
+
+/* MÓVIL: Texto centrado */
+@media (max-width: 767px) {
+  .texto-imagen {
+    padding: 0 16px;
+    text-align: center;
   }
 }
 
@@ -343,10 +432,19 @@
   line-height: 1.3;
 }
 
+/* TABLET: Tamaño ajustado */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .producto-title {
+    font-size: 26px;
+  }
+}
+
+/* MÓVIL: Tamaño reducido y centrado */
 @media (max-width: 767px) {
   .producto-title {
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 1.2;
   }
 }
 
@@ -356,7 +454,6 @@
   padding-left: 20px;
   margin: 8px 0;
   text-align: left;
-  font-size: 24px;
 }
 
 .texto-imagen li {
@@ -367,9 +464,28 @@
   line-height: 1.5;
 }
 
+/* TABLET: Tamaño de fuente ajustado */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .texto-imagen ul {
+    padding-left: 18px;
+  }
+  
+  .texto-imagen li {
+    font-size: 18px;
+  }
+}
+
+/* MÓVIL: Tamaño de fuente reducido */
 @media (max-width: 767px) {
+  .texto-imagen ul {
+    padding-left: 20px;
+    text-align: left;
+    margin: 12px 0;
+  }
+  
   .texto-imagen li {
     font-size: 14px;
+    margin-bottom: 6px;
   }
 }
 
@@ -377,13 +493,7 @@
 /* BOTONES */
 .btn-container {
   text-align: center;
-  margin-top: 8px;
-}
-
-@media (max-width: 767px) {
-  .btn-container {
-    text-align: center;
-  }
+  margin-top: 12px;
 }
 
 .btn {
@@ -398,6 +508,28 @@
   box-shadow: 0 6px 14px rgba(10, 24, 42, 0.12);
   transition: transform .18s ease, box-shadow .18s ease;
   margin-bottom: 10px;
+}
+
+/* TABLET: Botón ajustado */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+}
+
+/* MÓVIL: Botón más pequeño */
+@media (max-width: 767px) {
+  .btn-container {
+    margin-top: 16px;
+  }
+  
+  .btn {
+    padding: 10px 28px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 280px;
+  }
 }
 
 .btn:hover {
@@ -432,7 +564,8 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+/* MÓVIL: Segundo producto con imagen arriba */
+@media (max-width: 767px) {
   .productos-grid article:nth-child(2) .contenedor-imagen-texto {
     flex-direction: column-reverse;
   }
@@ -442,12 +575,22 @@
 .logo-porte {
   margin-top: 20px;
 }
-@media (max-width: 768px) {
+
+/* MÓVIL: Ocultar logo en móvil */
+@media (max-width: 767px) {
   .logo-porte {
-    display: none ;
+    display: none;
   }
 }
 
-.reversa{
+/* DESKTOP: Layout reverso para segundo producto */
+.reversa {
   flex-direction: row-reverse;
+}
+
+/* MÓVIL: El layout reverso se maneja con flex-direction: column-reverse */
+@media (max-width: 767px) {
+  .reversa {
+    flex-direction: column;
+  }
 }
