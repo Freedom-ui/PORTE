@@ -1,0 +1,385 @@
+/* ============================================ */
+/* FAMILIA PORTE */
+/* ============================================ */
+
+.main-content {
+  zoom: 0.8;
+}
+
+/* ============================================ */
+/* TÍTULO PRINCIPAL CON LÍNEAS */
+/* ============================================ */
+
+.titulo-con-lineas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.titulo-con-lineas .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #ccc;
+  max-width: 530px;
+}
+
+.familia-porte-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 70px;
+  color: var(--color-primary);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ============================================ */
+/* SECCIÓN: NUESTRO OBJETIVO */
+/* ============================================ */
+
+.objetivo-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 56px;
+  background-color: #fff;
+}
+
+.objetivo-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Card contenedora 1440x703 */
+.objetivo-contenido {
+  width: 1440px;
+  height: 603px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px 40px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header arriba a la izquierda */
+.objetivo-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.objetivo-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 56px;
+  color: var(--color-primary);
+  margin: 0;
+  line-height: 1;
+}
+
+.objetivo-subtitulo {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 8px 0 0 0;
+}
+
+/* Cuerpo: Imagen + Textos */
+.objetivo-cuerpo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.objetivo-imagen-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 600px;
+}
+
+.objetivo-imagen {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.objetivo-textos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.objetivo-texto {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 24px;
+  color: var(--color-primary);
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* ============================================ */
+/* SECCIÓN: ¿QUÉ NOS HACE DIFERENTES? */
+/* ============================================ */
+
+.diferencias-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 56px;
+  background-color: #fff;
+}
+
+.diferencias-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Card contenedora 1440x703 */
+.diferencias-contenido {
+  width: 1440px;
+  height: 703px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px 40px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header arriba a la izquierda */
+.diferencias-header {
+  text-align: left;
+  margin-bottom: 25px;
+  flex-shrink: 0;
+}
+
+.diferencias-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 48px;
+  color: var(--color-primary);
+  margin: 0 0 5px 0;
+  line-height: 1.1;
+}
+
+.diferencias-subtitulo {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* Cuerpo: Textos + Imagen (orden invertido) */
+.diferencias-cuerpo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.diferencias-textos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.diferencias-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.diferencias-item {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 24px;
+  color: var(--color-primary);
+  line-height: 1.3;
+  margin: 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.diferencias-item::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-size: 12px;
+}
+
+.diferencias-item strong {
+  font-family: 'InstrumentSans-Bold', sans-serif;
+}
+
+.diferencias-imagen-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 600px;
+}
+.diferencias-imagen {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+  
+/* ============================================ */
+/* SECCION: NUESTRA FILOSOFIA */
+/* ============================================ */
+
+.filosofia-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 56px;
+  background-color: #fff;
+}
+
+.filosofia-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Card contenedora 1440x703 */
+.filosofia-contenido {
+  width: 1440px;
+  height: 603px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 60px 40px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header arriba a la izquierda */
+.filosofia-header {
+  text-align: left;
+  margin-bottom: 25px;
+  flex-shrink: 0;
+}
+
+.filosofia-titulo {
+  font-family: 'InriaSans-Bold', sans-serif;
+  font-size: 48px;
+  color: var(--color-primary);
+  margin: 0 0 5px 0;
+  line-height: 1.1;
+}
+
+.filosofia-subtitulo {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* Cuerpo: Imagen + Textos */
+.filosofia-cuerpo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-direction: row-reverse;
+}
+
+.filosofia-textos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filosofia-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filosofia-item {
+  font-family: 'InstrumentSans-Regular', sans-serif;
+  font-size: 24px;
+  color: var(--color-primary);
+  line-height: 1.3;
+  margin: 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.filosofia-item::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-size: 12px;
+}
+
+.filosofia-item strong {
+  font-family: 'InstrumentSans-Bold', sans-serif;
+}
+
+.filosofia-imagen-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 600px;
+}
+.filosofia-imagen {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ============================================ */
+/* RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 1024px) {
+  .objetivo-contenido {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .objetivo-imagen-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .familia-porte-titulo {
+    font-size: 48px;
+  }
+
+  .objetivo-titulo {
+    font-size: 42px;
+  }
+
+  .objetivo-subtitulo,
+  .objetivo-texto {
+    font-size: 16px;
+  }
+
+  .objetivo-imagen-container {
+    height: 300px;
+  }
+}
