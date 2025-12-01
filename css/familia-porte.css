@@ -59,17 +59,11 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   padding: 30px 60px 40px;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.objetivo-contenido:hover {
-  transform: translateY(-5px);
-  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* Header arriba a la izquierda */
@@ -154,17 +148,11 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   padding: 30px 60px 40px;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.diferencias-contenido:hover {
-  transform: translateY(-5px);
-  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* Header arriba a la izquierda */
@@ -272,17 +260,11 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   padding: 30px 60px 40px;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.filosofia-contenido:hover {
-  transform: translateY(-5px);
-  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* Header arriba a la izquierda */
